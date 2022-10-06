@@ -1,0 +1,42 @@
+@import "../../styles/tokens.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+
+  background: $background-primary; // fallback
+  background: linear-gradient(
+    to bottom,
+    $background-primary-grad 0%,
+    $background-primary 100%
+  );
+  overflow: auto;
+}
+
+.title {
+  @include heading-styles;
+  font-size: 32px;
+  letter-spacing: 5px;
+
+  color: $content-on-color;
+}
+
+.subtitle {
+  @include heading-styles;
+  font-size: 16px;
+  letter-spacing: 15px;
+
+  color: $content-on-color;
+
+  margin-top: 10px;
+
+  @media (max-width: $breakpoint-small) {
+    font-size: 12px;
+    padding: 0 16px;
+    line-height: 32px;
+    letter-spacing: 4px;
+  }
+}

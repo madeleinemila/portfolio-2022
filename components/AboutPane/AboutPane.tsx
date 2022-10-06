@@ -1,14 +1,13 @@
 import { forwardRef, ForwardRefRenderFunction } from "react";
 
+import styles from "./AboutPane.module.scss";
+
 const AboutPane: ForwardRefRenderFunction<HTMLDivElement, {}> = (
   _props,
   ref
 ) => {
   return (
-    <div
-      ref={ref}
-      style={{ width: "100%", height: "100vh", background: "white" }}
-    >
+    <div ref={ref} className={styles.container}>
       About info coming soon...
     </div>
   );

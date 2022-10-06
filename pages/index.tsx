@@ -3,10 +3,8 @@ import type { NextPage } from "next";
 import { useEffect, useRef } from "react";
 
 import AboutPane from "../components/AboutPane/AboutPane";
-import Nav from "../components/Nav/Nav";
+import MainPane from "../components/MainPane/MainPane";
 import WorkPane from "../components/WorkPane/WorkPane";
-
-import styles from "./index.module.scss";
 
 const Home: NextPage = () => {
   const aboutRef = useRef<HTMLDivElement>(null);
@@ -35,15 +33,7 @@ const Home: NextPage = () => {
 
       <>
         <AboutPane ref={aboutRef} />
-        <div ref={mainRef} className={styles.container}>
-          <Nav direction="top" label="About" onClick={goToAbout} />
-          <header>
-            <h1 className={styles.title}>Madeleine Milasas</h1>
-            <h2 className={styles.subtitle}>Software Engineer</h2>
-          </header>
-          {/* Graphic */}
-          <Nav direction="bottom" label="Work" onClick={goToWork} />
-        </div>
+        <MainPane ref={mainRef} goToAbout={goToAbout} goToWork={goToWork} />
         <WorkPane ref={workRef} />
       </>
     </>

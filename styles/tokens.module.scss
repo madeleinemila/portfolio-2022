@@ -1,0 +1,20 @@
+/* Color */
+
+$background-primary: #23538a;
+$background-primary-grad: #00eab3;
+$background-secondary: #eee;
+
+$content-on-color: white;
+
+/* Typography */
+
+@mixin heading-styles() {
+  font-family: "Futura", sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  text-align: center;
+}
+
+/* Breakpoints */
+
+$breakpoint-small: 640px;
