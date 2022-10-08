@@ -2,6 +2,14 @@
 
 .container {
   width: 100%;
-  height: 100vh;
+  overflow: hidden;
   background: $background-primary;
+}
+
+.thumbnailContainer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
 }

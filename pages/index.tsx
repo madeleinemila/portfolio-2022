@@ -38,7 +38,7 @@ const Home: NextPage = () => {
       <>
         <AboutPane ref={aboutRef} jumpToMain={jumpToMain} jumpToWork={jumpToWork} />
         <MainPane ref={mainRef} jumpToAbout={jumpToAbout} jumpToWork={jumpToWork} />
-        <WorkPane ref={workRef} />
+        <WorkPane ref={workRef} jumpToMain={jumpToMain} />
       </>
     </>
   );

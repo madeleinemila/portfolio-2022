@@ -3,19 +3,24 @@ import cx from "classnames";
 import styles from "./Nav.module.scss";
 
 type NavDirection = "down" | "up";
+type NavVariant = "light" | "dark" | "block";
 
 type NavProps = {
   direction: NavDirection;
   onClick: () => void;
-  isDark?: boolean;
   label?: string;
+  variant?: NavVariant;
 };
 
-const Nav = ({ direction, isDark, label, onClick }: NavProps): JSX.Element => {
+const Nav = ({ direction, label, onClick, variant = "light" }: NavProps): JSX.Element => {
   return (
     <button
       aria-label={label || direction}
-      className={cx(styles.container, { [styles.dark]: isDark })}
+      className={cx(styles.container, {
+        [styles.light]: variant === "light",
+        [styles.dark]: variant === "dark",
+        [styles.block]: variant === "block",
+      })}
       onClick={onClick}
     >
       {direction === "up" && <h4 className={styles.chevronUp}>&circ;</h4>}

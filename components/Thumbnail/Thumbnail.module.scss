@@ -1,0 +1,40 @@
+@import "../../styles/tokens.module.scss";
+
+.container {
+  width: 100px;
+  margin: 24px;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+
+    .label {
+      /* For highlight effect */
+      background-position: -99% 0;
+    }
+  }
+}
+
+.img {
+  border-radius: 8px;
+}
+
+.labelContainer {
+  display: inline-block;
+  height: 80px;
+}
+
+.label {
+  display: inline; /* For highlight effect */
+
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  text-transform: lowercase;
+  color: $content-primary;
+
+  /* For highlight effect */
+  background: linear-gradient(to right, #0000 50%, $background-accent-overlay 50%);
+  background-size: 202%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease-in-out;
+}

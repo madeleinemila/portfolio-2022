@@ -2,6 +2,7 @@
 
 $background-accent-dark: #23538a;
 $background-accent-light: #00eab2;
+$background-accent-overlay: #66cab393;
 $background-primary: #eee;
 
 $content-on-color: white;
@@ -36,7 +37,7 @@ $heading-letter-spacing: 5px;
 
 @mixin bordered-content-heading-styles() {
   font-family: "Crimson", serif;
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-weight: lighter;
   text-align: center;
 

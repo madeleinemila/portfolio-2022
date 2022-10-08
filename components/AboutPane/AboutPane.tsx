@@ -1,5 +1,6 @@
 import { forwardRef, ForwardRefRenderFunction } from "react";
 
+import BorderedContent from "../BorderedContent/BorderedContent";
 import Intro from "../Intro/Intro";
 import Nav from "../Nav/Nav";
 import Profile from "../Profile/Profile";
@@ -14,15 +15,11 @@ type AboutPaneProps = {
 const AboutPane: ForwardRefRenderFunction<HTMLDivElement, AboutPaneProps> = ({ jumpToMain, jumpToWork }, ref) => {
   return (
     <div ref={ref} className={styles.container}>
-      <div className={styles.borderedContent}>
-        <h3 className={styles.borderedContentHeading}>About</h3>
-
+      <BorderedContent heading="About">
         <Intro />
-
         <Profile onJumpToWork={jumpToWork} />
-
-        <Nav direction="down" onClick={jumpToMain} isDark />
-      </div>
+        <Nav direction="down" onClick={jumpToMain} variant="dark" />
+      </BorderedContent>
     </div>
   );
 };
