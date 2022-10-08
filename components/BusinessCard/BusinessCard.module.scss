@@ -1,0 +1,23 @@
+@import "../../styles/tokens.module.scss";
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.imageContainer {
+  display: none;
+
+  @media (min-width: $breakpoint-large) {
+    display: block;
+  }
+}
+
+.jumpTo {
+  background-color: $background-accent-light;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -2,25 +2,28 @@ import cx from "classnames";
 
 import styles from "./Nav.module.scss";
 
-type NavDirection = "top" | "bottom";
+type NavDirection = "down" | "up";
 
 type NavProps = {
   direction: NavDirection;
-  label: string;
   onClick: () => void;
+  isDark?: boolean;
+  label?: string;
 };
 
-const Nav = ({ direction, label, onClick }: NavProps) => {
+const Nav = ({ direction, isDark, label, onClick }: NavProps): JSX.Element => {
   return (
-    <div role="button" className={styles.container} onClick={onClick}>
-      {direction === "top" && <h4 className={styles.chevron}>&circ;</h4>}
+    <button
+      aria-label={label || direction}
+      className={cx(styles.container, { [styles.dark]: isDark })}
+      onClick={onClick}
+    >
+      {direction === "up" && <h4 className={styles.chevronUp}>&circ;</h4>}
 
-      <h4 className={styles.label}>{label}</h4>
+      {label && <h4 className={styles.label}>{label}</h4>}
 
-      {direction === "bottom" && (
-        <h4 className={cx(styles.chevron, styles.chevronDown)}>&circ;</h4>
-      )}
-    </div>
+      {direction === "down" && <h4 className={styles.chevronDown}>&circ;</h4>}
+    </button>
   );
 };
 

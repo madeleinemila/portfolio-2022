@@ -15,11 +15,15 @@ const Home: NextPage = () => {
     mainRef.current?.scrollIntoView();
   }, []);
 
-  const goToAbout = () => {
+  const jumpToAbout = () => {
     aboutRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
-  const goToWork = () => {
+  const jumpToMain = () => {
+    mainRef.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
+  const jumpToWork = () => {
     workRef.current?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -32,8 +36,8 @@ const Home: NextPage = () => {
       </Head>
 
       <>
-        <AboutPane ref={aboutRef} />
-        <MainPane ref={mainRef} goToAbout={goToAbout} goToWork={goToWork} />
+        <AboutPane ref={aboutRef} jumpToMain={jumpToMain} jumpToWork={jumpToWork} />
+        <MainPane ref={mainRef} jumpToAbout={jumpToAbout} jumpToWork={jumpToWork} />
         <WorkPane ref={workRef} />
       </>
     </>

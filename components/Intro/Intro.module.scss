@@ -1,0 +1,39 @@
+@import "../../styles/tokens.module.scss";
+
+.container {
+  display: flex;
+  max-width: 600px;
+  flex-direction: column;
+  align-items: center;
+  gap: 32px;
+  padding: 16px;
+
+  color: $content-primary;
+}
+
+.greeting {
+  font-family: serif;
+  font-style: italic;
+  font-size: 40px;
+  letter-spacing: 16px;
+  text-transform: lowercase;
+}
+
+.intro {
+  font-size: 28px;
+  letter-spacing: 1px;
+  line-height: normal;
+  text-align: center;
+}
+
+.highlight {
+  background-color: $background-accent-light;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+
+  font-size: 18px;
+}

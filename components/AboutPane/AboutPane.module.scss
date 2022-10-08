@@ -2,6 +2,35 @@
 
 .container {
   width: 100%;
-  height: 100vh;
-  background: $background-secondary;
+  overflow: auto;
+  background: $background-primary;
+}
+
+.borderedContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  position: relative;
+
+  border: 1px solid $border-primary;
+  margin: 32px;
+  padding: 32px;
+
+  @media (min-width: $breakpoint-small) {
+    padding: 64px;
+  }
+}
+
+.borderedContentHeading {
+  @include bordered-content-heading-styles;
+
+  position: absolute;
+  top: -12px;
+  left: 16px;
+  margin: 0;
+  padding: 0 32px;
+
+  background-color: $background-primary;
+  color: $content-primary;
 }

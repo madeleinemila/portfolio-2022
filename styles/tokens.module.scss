@@ -1,20 +1,50 @@
 /* Color */
 
-$background-primary: #23538a;
-$background-primary-grad: #00eab3;
-$background-secondary: #eee;
+$background-accent-dark: #23538a;
+$background-accent-light: #00eab2;
+$background-primary: #eee;
 
 $content-on-color: white;
+$content-primary: #222;
+
+$border-primary: #333;
 
 /* Typography */
+
+$heading-letter-spacing: 5px;
 
 @mixin heading-styles() {
   font-family: "Futura", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   text-align: center;
+
+  font-size: 32px;
+  letter-spacing: $heading-letter-spacing;
+  margin-right: -$heading-letter-spacing; /* offset noticeable trailing space from letter-spacing */
+}
+
+@mixin subheading-styles() {
+  font-family: "Futura", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: left;
+
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+@mixin bordered-content-heading-styles() {
+  font-family: "Crimson", serif;
+  text-transform: uppercase;
+  font-weight: lighter;
+  text-align: center;
+
+  font-size: 16px;
+  letter-spacing: 3px;
 }
 
 /* Breakpoints */
 
 $breakpoint-small: 640px;
+$breakpoint-large: 1120px;

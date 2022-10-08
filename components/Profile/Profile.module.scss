@@ -1,0 +1,28 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  padding: 16px;
+  gap: 64px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cell {
+  flex: 1 0;
+  min-width: 200px;
+  margin-bottom: 16px;
+}
+
+.listStyleNone {
+  list-style: none;
+  padding: 0;
+}
+
+.listStyleDisc {
+  list-style: disc;
+}

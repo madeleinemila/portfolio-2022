@@ -1,4 +1,4 @@
-import { FC, useCallback, useRef } from "react";
+import { useCallback, useRef } from "react";
 import dynamic from "next/dynamic";
 import p5 from "p5"; /* Imported for types only */
 import {
@@ -25,7 +25,7 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 
 const particles = new Array(INIT_NUM_PARTICLES);
 
-const Graph: FC<{}> = () => {
+const Graph = (): JSX.Element => {
   // Init refs we'll use for layout (for horizontal axis position and how to augment the graph lines)
   const deltasRef = useRef(DELTAS);
   const yUpperRef = useRef(Y_UPPER_SPACE);

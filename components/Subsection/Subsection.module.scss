@@ -1,0 +1,11 @@
+@import "../../styles/tokens.module.scss";
+
+.container {
+  color: $content-primary;
+}
+
+.heading {
+  @include subheading-styles;
+
+  margin-bottom: 16px;
+}
