@@ -11,19 +11,6 @@
   background-color: $background-tertiary-overlay;
 }
 
-.modal {
-  position: fixed;
-  width: 75%;
-  height: 100%;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 20;
-
-  background-color: $background-secondary;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
-}
-
 $square-size: 100px;
 $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 
@@ -53,5 +40,43 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   }
   100% {
     stroke-dashoffset: 0; // Animate in the solid part of the 'dash' (i.e. draw the perimeter)
+  }
+}
+
+.modal {
+  position: fixed;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+
+  background-color: $background-secondary;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.modalContentContainer {
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+}
+
+.heading {
+  @include heading-styles;
+
+  margin-bottom: 48px;
+}
+
+.close {
+  @include heading-styles;
+
+  align-self: flex-end;
+  letter-spacing: 0;
+  color: $content-secondary;
+
+  &:hover,
+  &:focus-visible {
+    color: $content-primary;
   }
 }

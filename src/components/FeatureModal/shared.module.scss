@@ -1,0 +1,11 @@
+@import "../../styles/tokens.module.scss";
+
+.featureContentContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.featureLink {
+  color: $background-accent-dark;
+}
