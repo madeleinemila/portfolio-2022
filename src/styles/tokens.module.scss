@@ -4,6 +4,8 @@ $background-accent-dark: #23538a;
 $background-accent-light: #00eab2;
 $background-accent-overlay: #66cab393;
 $background-primary: #eee;
+$background-secondary: #fff;
+$background-tertiary-overlay: #ffe4e4e6;
 
 $content-on-color: white;
 $content-primary: #222;
@@ -49,3 +51,7 @@ $heading-letter-spacing: 5px;
 
 $breakpoint-small: 640px;
 $breakpoint-large: 1120px;
+
+/* Z-index */
+
+$zindex-modal-background: 10;

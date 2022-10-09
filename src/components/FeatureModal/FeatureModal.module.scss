@@ -1,0 +1,57 @@
+@import "../../styles/tokens.module.scss";
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: $zindex-modal-background;
+
+  background-color: $background-tertiary-overlay;
+}
+
+.modal {
+  position: fixed;
+  width: 75%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 20;
+
+  background-color: $background-secondary;
+  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+$square-size: 100px;
+$dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
+
+.animatedSquareContainer {
+  width: $square-size;
+  height: $square-size;
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.animatedSquare {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: white;
+  stroke-width: 10px;
+  stroke-dasharray: $dasharray;
+  animation: drawIn 0.5s 0s linear forwards;
+}
+
+@keyframes drawIn {
+  0% {
+    stroke-dashoffset: $dasharray; // Start the 'dash' so offset that we're only seeing the gap (i.e. no stroke)
+  }
+  100% {
+    stroke-dashoffset: 0; // Animate in the solid part of the 'dash' (i.e. draw the perimeter)
+  }
+}

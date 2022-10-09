@@ -1,5 +1,5 @@
 import Image from "next/image";
-import profilePic from "../../public/images/profile.jpg";
+import profilePic from "../../../public/images/profile.jpg";
 import Subsection from "../Subsection/Subsection";
 
 import styles from "./BusinessCard.module.scss";
