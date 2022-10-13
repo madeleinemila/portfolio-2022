@@ -1,11 +1,24 @@
 @import "../../styles/tokens.module.scss";
 
-.featureContentContainer {
+.featureLink {
+  color: $background-accent-dark;
+}
+
+.featureFlexColumn {
   display: flex;
   flex-direction: column;
   gap: 16px;
 }
 
-.featureLink {
-  color: $background-accent-dark;
+.featureFlexRow {
+  display: flex;
+  gap: 16px;
+}
+
+.featureFlex3 {
+  flex: 3;
+}
+
+.featureFlex2 {
+  flex: 2;
 }

@@ -51,6 +51,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   left: 50%;
   transform: translateX(-50%);
   z-index: 20;
+  overflow-y: auto;
 
   background-color: $background-secondary;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
