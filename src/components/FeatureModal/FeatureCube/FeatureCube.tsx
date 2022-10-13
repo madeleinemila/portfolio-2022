@@ -1,4 +1,5 @@
 import Image from "next/image";
+import cx from "classnames";
 import cubeImage from "../../../../public/images/features/cube.png";
 
 import styles from "../shared.module.scss";
@@ -38,7 +39,7 @@ const FeatureCube = () => {
         href="https://www.openprocessing.org/sketch/470724"
         target="_blank"
         rel="noreferrer"
-        className={styles.featureFlex2}
+        className={cx(styles.featureFlex2, styles.featureImage)}
       >
         <Image src={cubeImage} alt="Net of the Rubik's cube" />
       </a>

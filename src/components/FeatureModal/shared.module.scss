@@ -7,18 +7,32 @@
 .featureFlexColumn {
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 48px;
 }
 
 .featureFlexRow {
   display: flex;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 48px;
+}
+
+.featureFlex1 {
+  flex: 1;
+}
+
+.featureFlex2 {
+  flex: 2;
 }
 
 .featureFlex3 {
   flex: 3;
 }
 
-.featureFlex2 {
-  flex: 2;
+.caption {
+  display: inline;
+  text-align: left;
+}
+
+.featureImage {
+  min-width: 300px;
 }
