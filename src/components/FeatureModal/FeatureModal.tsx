@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import FeatureAnsarada from "./FeatureAnsarada/FeatureAnsarada";
 import FeatureCube from "./FeatureCube/FeatureCube";
 import FeatureGehms from "./FeatureGehms/FeatureGehms";
@@ -37,13 +37,25 @@ const featureContentMap: Record<FeatureKey, FeatureContent> = {
 const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
   const [revealContent, setRevealContent] = useState<boolean>(false);
 
+  const escapeToClose = useCallback(
+    (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        onClose();
+      }
+    },
+    [onClose]
+  );
+
   useEffect(() => {
     // Prevent body scroll when modal is open
     document.body.style.overflow = "hidden";
+
+    window.addEventListener("keydown", escapeToClose);
     return () => {
       document.body.style.overflow = "unset";
+      window.removeEventListener("keydown", escapeToClose);
     };
-  }, []);
+  }, [escapeToClose]);
 
   const handleAnimationEnd = useCallback(() => {
     setRevealContent(true);

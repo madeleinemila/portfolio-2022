@@ -28,11 +28,15 @@
   flex: 3;
 }
 
+.featureImage {
+  min-width: 300px;
+}
+
 .caption {
   display: inline;
   text-align: left;
 }
 
-.featureImage {
-  min-width: 300px;
+.dropShadow {
+  box-shadow: 5px 5px 15px #2223;
 }
