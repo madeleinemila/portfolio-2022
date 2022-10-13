@@ -40,7 +40,7 @@ const FeatureVivid = () => {
         <div className={styles.featureFlex1}>
           <a href="https://player.vimeo.com/video/92922101" target="_blank" rel="noreferrer">
             <Image src={dichroicMakingOfImage} alt="Dichroic Dimensions Making Of" />
-            <caption className={styles.caption}>&lsquo;Dichroic Dimensions&rsquo; making-of video</caption>
+            <span className={styles.caption}>&lsquo;Dichroic Dimensions&rsquo; making-of video</span>
           </a>
         </div>
       </div>
