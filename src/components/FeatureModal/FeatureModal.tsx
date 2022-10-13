@@ -52,7 +52,7 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
 
     window.addEventListener("keydown", escapeToClose);
     return () => {
-      document.body.style.overflow = "unset";
+      document.body.style.overflow = "overlay";
       window.removeEventListener("keydown", escapeToClose);
     };
   }, [escapeToClose]);

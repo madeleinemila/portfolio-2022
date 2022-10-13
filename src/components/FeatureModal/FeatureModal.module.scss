@@ -9,6 +9,10 @@
   z-index: $zindex-modal-background;
 
   background-color: $background-tertiary-overlay;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-tertiary-overlay-dark-theme;
+  }
 }
 
 $square-size: 100px;
@@ -53,6 +57,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   z-index: 20;
   overflow-y: auto;
 
+  color: $content-primary;
   background-color: $background-secondary;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 
@@ -62,6 +67,11 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 
   @media (min-width: $breakpoint-large) {
     width: 75%;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+    background-color: $background-secondary-dark-theme;
   }
 }
 
@@ -87,5 +97,9 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   &:hover,
   &:focus-visible {
     color: $content-primary;
+
+    @media (prefers-color-scheme: dark) {
+      color: $content-primary-dark-theme;
+    }
   }
 }
