@@ -16,20 +16,25 @@
   gap: 48px;
 }
 
+$min-cell-width: 300px;
+
 .featureFlex1 {
+  min-width: $min-cell-width;
   flex: 1;
 }
 
 .featureFlex2 {
+  min-width: $min-cell-width;
   flex: 2;
 }
 
 .featureFlex3 {
+  min-width: $min-cell-width;
   flex: 3;
 }
 
 .featureImage {
-  min-width: 300px;
+  min-width: 360px;
 }
 
 .caption {
@@ -37,6 +42,15 @@
   text-align: left;
 }
 
+.centered {
+  margin: 0 auto;
+  max-width: 600px;
+}
+
 .dropShadow {
   box-shadow: 5px 5px 15px #2223;
+}
+
+.wrapReverse {
+  flex-wrap: wrap-reverse;
 }
