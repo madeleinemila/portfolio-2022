@@ -1,4 +1,4 @@
-import { useCallback, useRef } from "react";
+import { useCallback, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
 import p5 from "p5"; /* Imported for types only */
 import {
@@ -44,18 +44,11 @@ const Graph = (): JSX.Element => {
       if (particles.length > MAX_PARTICLES) return;
       const pos = generateRandomPos(sketchWidth);
       const vel = generateRandomVel();
-      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 3, vel));
+      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 5, vel));
     }
   }, []);
 
   // **** Event handlers ****
-
-  const onVerticalScroll = useCallback(
-    (sketch: p5) => {
-      makeNParticles(1, sketch.width);
-    },
-    [makeNParticles]
-  );
 
   const onDeviceMoved = useCallback(
     (sketch: p5) => {
@@ -74,6 +67,17 @@ const Graph = (): JSX.Element => {
   const onWindowResized = useCallback((sketch: p5) => {
     sketch.resizeCanvas(window.innerWidth, sketch.height);
   }, []);
+
+  const onScroll = useCallback(() => {
+    makeNParticles(30, window.innerWidth);
+  }, [makeNParticles]);
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll);
+    return () => {
+      window.removeEventListener("scroll", onScroll);
+    };
+  }, [onScroll]);
 
   // **** p5 setup and draw methods ****
 
@@ -192,7 +196,6 @@ const Graph = (): JSX.Element => {
     <Sketch
       setup={setup}
       draw={draw}
-      mouseWheel={onVerticalScroll}
       deviceMoved={onDeviceMoved}
       deviceShaken={onDeviceShaken}
       windowResized={onWindowResized}

@@ -9,10 +9,13 @@ const Intro = () => {
       </p>
       <div className={styles.content}>
         <p>
-          I started my career in film, television, music and live events. In these fields, I saw web&#8209;based
-          technologies completely transform how we worked, and what we could create.
+          I started my career in film, television, music and live events. Inspired by all the web-based innovations I
+          saw, I added software engineering into the mix.
         </p>
-        <p>Inspired by this, I leapt into software engineering and discovered a love of all things code.</p>
+        <p>
+          You can now find me combining all of the above, developing global applications, and experimenting in image,
+          sound & code.
+        </p>
       </div>
     </div>
   );

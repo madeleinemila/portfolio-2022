@@ -1,7 +1,7 @@
 export const GRAPH_BREAKPOINT = 800;
 
 export const INIT_NUM_PARTICLES = 40;
-export const MAX_PARTICLES = 100;
+export const MAX_PARTICLES = 150;
 
 export const SKETCH_HEIGHT = 240;
 export const Y_UPPER_SPACE = 148;

@@ -6,14 +6,14 @@ import Nav from "../Nav/Nav";
 import Thumbnail from "../Thumbnail/Thumbnail";
 
 import ansaradaImage from "../../../public/images/thumbnails/ansarada-bnw-invert-2.png";
-import cubeImage from "../../../public/images/thumbnails/cube-thumb.jpg";
-import gehmsImage from "../../../public/images/thumbnails/gehms_thumb_lowcon_bnw.jpg";
-import lightingImage from "../../../public/images/thumbnails/prg_thumb_beams.jpg";
+import cubeImage from "../../../public/images/thumbnails/cube-w-r.png";
+import gehmsImage from "../../../public/images/thumbnails/controllers-cu.jpg";
+import lightingImage from "../../../public/images/thumbnails/console-1.png";
 import safetyCultureImage from "../../../public/images/thumbnails/sc-logo.png";
-import subvixenImage from "../../../public/images/thumbnails/subvixen-thumb.jpg";
-import triageImage from "../../../public/images/thumbnails/triage-thumb.jpg";
+import subvixenImage from "../../../public/images/thumbnails/light-pixels-1.jpg";
+import triageImage from "../../../public/images/thumbnails/triage_thumb.jpg";
 import tttImage from "../../../public/images/thumbnails/ttt_thumb_blowup.jpg";
-import vividImage from "../../../public/images/thumbnails/dichroic_thumb_cu1.jpg";
+import vividImage from "../../../public/images/thumbnails/dichroic-color.png";
 import type { FeatureKey } from "../types";
 
 import styles from "./WorkPane.module.scss";
@@ -48,11 +48,11 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
         </div>
       </BorderedContent>
 
-      <BorderedContent heading="Some projects">
+      <BorderedContent heading="Project sampler">
         <div className={styles.thumbnailContainer}>
           <Thumbnail
             imageData={subvixenImage}
-            label="'Subvixen' visual code generator"
+            label="'Subvixen' LED pixel mapper"
             onClick={() => setFeature("subvixen")}
           />
           <Thumbnail imageData={triageImage} label="'Triage' knowledge base" onClick={() => setFeature("triage")} />

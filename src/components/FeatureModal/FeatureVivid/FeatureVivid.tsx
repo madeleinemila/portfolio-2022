@@ -35,11 +35,11 @@ const FeatureVivid = () => {
       </div>
       <div className={styles.featureFlexRow}>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
-          <Image src={pitchSortImage} alt="Pitch reactive software screenshot" />
+          <Image src={pitchSortImage} alt="Pitch reactive software screenshot" layout="responsive" />
         </div>
         <div className={styles.featureFlex1}>
           <a href="https://player.vimeo.com/video/92922101" target="_blank" rel="noreferrer">
-            <Image src={dichroicMakingOfImage} alt="Dichroic Dimensions Making Of" />
+            <Image src={dichroicMakingOfImage} alt="Dichroic Dimensions Making Of" layout="responsive" />
             <span className={styles.caption}>&lsquo;Dichroic Dimensions&rsquo; making-of video</span>
           </a>
         </div>
