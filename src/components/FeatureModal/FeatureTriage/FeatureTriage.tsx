@@ -1,9 +1,10 @@
 import Image from "next/image";
 import cx from "classnames";
 import triageHomeImage from "../../../../public/images/features/triage-home-new.jpg";
-import triagePinsImage from "../../../../public/images/features/triage-pins-new.jpg";
-import triageSearchImage from "../../../../public/images/features/triage-search-new.jpg";
-import triageSignupImage from "../../../../public/images/features/triage-signup-new.jpg";
+// TODO: Bring back these images in a carousel
+// import triagePinsImage from "../../../../public/images/features/triage-pins-new.jpg";
+// import triageSearchImage from "../../../../public/images/features/triage-search-new.jpg";
+// import triageSignupImage from "../../../../public/images/features/triage-signup-new.jpg";
 import styles from "./FeatureTriage.module.scss";
 
 const FeatureTriage = () => {
@@ -48,7 +49,8 @@ const FeatureTriage = () => {
           <Image src={triageHomeImage} alt="Screenshot of public home page" />
         </div>
       </div>
-      <div className={styles.featureFlexRow}>
+      {/* TODO: Carousel alt images */}
+      {/* <div className={styles.featureFlexRow}>
         <div className={cx(styles.featureFlex1, styles.featureImage, styles.secondaryImage)}>
           <Image src={triageSearchImage} alt="Screenshot of search working for a misspelt word" />
         </div>
@@ -58,7 +60,7 @@ const FeatureTriage = () => {
         <div className={cx(styles.featureFlex1, styles.featureImage, styles.secondaryImage)}>
           <Image src={triagePinsImage} alt="Screenshot of pins feature" />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

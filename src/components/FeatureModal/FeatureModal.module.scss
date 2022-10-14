@@ -10,6 +10,7 @@
   z-index: $zindex-modal-background;
 
   background-color: $background-tertiary-overlay;
+  backdrop-filter: blur(2px);
 
   @media (prefers-color-scheme: dark) {
     background-color: $background-tertiary-overlay-dark-theme;

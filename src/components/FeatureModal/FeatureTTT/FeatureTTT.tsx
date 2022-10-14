@@ -1,7 +1,7 @@
 import Image from "next/image";
 import cx from "classnames";
 import tictactoeImage from "../../../../public/images/features/tictactoe-no-header.jpg";
-import styles from "../shared.module.scss";
+import styles from "./FeatureTTT.module.scss";
 
 const FeatureTTT = () => {
   return (
@@ -34,10 +34,11 @@ const FeatureTTT = () => {
         </p>
         <br />
         <p>A JavaScript tic tac toe game with ever-increasing board size.</p>
+        <br />
         <p>Created for General Assembly&apos;s Software Engineering Immersive, week 3 solo assignment.</p>
         <p>Highlight: writing my first AI.</p>
       </div>
-      <div className={cx(styles.featureFlex1, styles.featureImage, styles.dropShadow)}>
+      <div className={cx(styles.featureFlex1, styles.image, styles.dropShadow)}>
         <a href="https://madeleinemila.github.io/tictactoe" target="_blank" rel="noreferrer">
           <Image src={tictactoeImage} alt="Screenshot of Tic Tac Toe level 10" layout="responsive" />
         </a>
