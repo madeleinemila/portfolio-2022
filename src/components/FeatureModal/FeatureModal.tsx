@@ -27,13 +27,13 @@ type FeatureContent = {
 const featureContentMap: Record<FeatureKey, FeatureContent> = {
   sc: { heading: "Software Engineer - SafetyCulture", content: <FeatureSC /> },
   ansarada: { heading: "Software Engineer - Ansarada", content: <FeatureAnsarada /> },
-  brooklyn: { heading: "'Brooklyn at Hibernian' - Live music x video", content: <FeatureBrooklyn /> },
+  brooklyn: { heading: "'Brooklyn at Hibernian' - Live music & video", content: <FeatureBrooklyn /> },
   subvixen: { heading: "Subvixen", content: <FeatureSubvixen /> },
   triage: { heading: "Triage", content: <FeatureTriage /> },
   gehms: { heading: "Gehms", content: <FeatureGehms /> },
   ttt: { heading: "Tic tac toe", content: <FeatureTTT /> },
   lighting: { heading: "Interactive lighting demos", content: <FeatureLighting /> },
-  o: { heading: "'Origin of O' - TaikOz Concert", content: <FeatureO /> },
+  o: { heading: "'Origin of O' - Taikoz Concert", content: <FeatureO /> },
   vivid: { heading: "Vivid Sydney - Dichroic Dimensions", content: <FeatureVivid /> },
   cube: { heading: "Rubik's cube", content: <FeatureCube /> },
 };

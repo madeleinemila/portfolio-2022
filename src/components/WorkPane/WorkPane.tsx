@@ -54,7 +54,7 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
         <div className={styles.thumbnailContainer}>
           <Thumbnail
             imageData={brooklynImage}
-            label="'Brooklyn at Hibernian' live music x video"
+            label="'Brooklyn at Hibernian' live music & video"
             onClick={() => setFeature("brooklyn")}
           />
           <Thumbnail
