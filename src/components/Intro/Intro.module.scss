@@ -9,6 +9,10 @@
   padding: 16px;
 
   color: $content-primary;
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+  }
 }
 
 .greeting {
@@ -28,6 +32,10 @@
 
 .highlight {
   background-color: $background-accent-light;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-accent-light-dark-theme;
+  }
 }
 
 .content {

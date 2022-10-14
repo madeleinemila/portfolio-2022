@@ -50,7 +50,7 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
         </div>
       </BorderedContent>
 
-      <BorderedContent heading="Project sampler">
+      <BorderedContent heading="Projects">
         <div className={styles.thumbnailContainer}>
           <Thumbnail
             imageData={brooklynImage}

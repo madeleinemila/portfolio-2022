@@ -37,4 +37,8 @@
   background-size: 202%;
   background-position: 0 0;
   transition: background-position 0.5s ease-in-out;
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+  }
 }

@@ -44,7 +44,7 @@ const Graph = (): JSX.Element => {
       if (particles.length > MAX_PARTICLES) return;
       const pos = generateRandomPos(sketchWidth);
       const vel = generateRandomVel();
-      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 5, vel));
+      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 4, vel));
     }
   }, []);
 
@@ -69,7 +69,7 @@ const Graph = (): JSX.Element => {
   }, []);
 
   const onScroll = useCallback(() => {
-    makeNParticles(30, window.innerWidth);
+    makeNParticles(10, window.innerWidth);
   }, [makeNParticles]);
 
   useEffect(() => {

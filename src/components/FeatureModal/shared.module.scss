@@ -2,6 +2,10 @@
 
 .featureLink {
   color: $background-accent-dark;
+
+  @media (prefers-color-scheme: dark) {
+    color: palegoldenrod;
+  }
 }
 
 .featureFlexColumn {
@@ -40,6 +44,7 @@ $min-cell-width: 300px;
 .caption {
   display: inline-block;
   text-align: left;
+  margin: 8px 0;
 }
 
 .centered {

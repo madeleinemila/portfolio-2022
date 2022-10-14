@@ -10,6 +10,15 @@
   background: $background-accent-dark; // fallback
   background: linear-gradient(to bottom, $background-accent-light 0%, $background-accent-dark 100%);
   overflow: hidden;
+
+  @media (prefers-color-scheme: dark) {
+    background: $background-accent-dark-dark-theme; // fallback
+    background: linear-gradient(
+      to bottom,
+      $background-accent-light-dark-theme 0%,
+      $background-accent-dark-dark-theme 100%
+    );
+  }
 }
 
 .bottomNav {

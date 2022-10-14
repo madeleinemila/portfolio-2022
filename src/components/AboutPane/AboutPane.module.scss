@@ -4,4 +4,8 @@
   width: 100%;
   overflow: auto;
   background: $background-primary;
+
+  @media (prefers-color-scheme: dark) {
+    background: $background-primary-dark-theme;
+  }
 }

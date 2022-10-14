@@ -1,0 +1,22 @@
+@mixin scrollbar-style($thumb-color) {
+  overflow: overlay;
+  $track-color: transparent;
+  $scrollbar-size: 10px;
+
+  /* Chrome, Safari */
+  &::-webkit-scrollbar {
+    width: $scrollbar-size;
+    height: $scrollbar-size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $thumb-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $track-color;
+  }
+
+  /* Firefox */
+  scrollbar-color: $thumb-color $track-color;
+}

@@ -4,7 +4,7 @@ import triageHomeImage from "../../../../public/images/features/triage-home-new.
 import triagePinsImage from "../../../../public/images/features/triage-pins-new.jpg";
 import triageSearchImage from "../../../../public/images/features/triage-search-new.jpg";
 import triageSignupImage from "../../../../public/images/features/triage-signup-new.jpg";
-import styles from "../shared.module.scss";
+import styles from "./FeatureTriage.module.scss";
 
 const FeatureTriage = () => {
   return (
@@ -37,7 +37,7 @@ const FeatureTriage = () => {
           <ul>
             <li>Ruby on Rails</li>
             <li>JavaScript</li>
-            <li>HTML5, CSS3 + SASS</li>
+            <li>HTML5, CSS3 + Sass</li>
             <li>PostgreSQL</li>
           </ul>
           <br />
@@ -49,13 +49,13 @@ const FeatureTriage = () => {
         </div>
       </div>
       <div className={styles.featureFlexRow}>
-        <div className={cx(styles.featureFlex1, styles.featureImage)}>
+        <div className={cx(styles.featureFlex1, styles.featureImage, styles.secondaryImage)}>
           <Image src={triageSearchImage} alt="Screenshot of search working for a misspelt word" />
         </div>
-        <div className={cx(styles.featureFlex1, styles.featureImage)}>
+        <div className={cx(styles.featureFlex1, styles.featureImage, styles.secondaryImage)}>
           <Image src={triageSignupImage} alt="Screenshot of signup page" />
         </div>
-        <div className={cx(styles.featureFlex1, styles.featureImage)}>
+        <div className={cx(styles.featureFlex1, styles.featureImage, styles.secondaryImage)}>
           <Image src={triagePinsImage} alt="Screenshot of pins feature" />
         </div>
       </div>

@@ -27,4 +27,9 @@
 
   background-color: $background-primary;
   color: $content-primary;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-primary-dark-theme;
+    color: $content-primary-dark-theme;
+  }
 }

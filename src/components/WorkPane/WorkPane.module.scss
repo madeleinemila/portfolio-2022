@@ -4,6 +4,10 @@
   width: 100%;
   overflow: hidden;
   background: $background-primary;
+
+  @media (prefers-color-scheme: dark) {
+    background: $background-primary-dark-theme;
+  }
 }
 
 .thumbnailContainer {

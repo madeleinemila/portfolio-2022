@@ -57,9 +57,17 @@ $chevron-size: 48px;
 .dark {
   color: $content-primary;
 
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+  }
+
   &:hover,
   &:focus-visible {
     color: $background-accent-light;
+
+    @media (prefers-color-scheme: dark) {
+      color: $background-accent-light-dark-theme;
+    }
   }
 }
 
@@ -71,6 +79,10 @@ $chevron-size: 48px;
   color: white;
   background-color: $background-accent-dark;
   transition: background-color 0.2s ease-in-out;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-accent-dark-dark-theme;
+  }
 
   &:hover,
   &:focus-visible {

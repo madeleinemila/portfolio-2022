@@ -1,4 +1,5 @@
 @import "../../styles/tokens.module.scss";
+@import "../../styles/utils.module.scss";
 
 .background {
   position: fixed;
@@ -50,35 +51,34 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 .modal {
   position: fixed;
   width: 100%;
+  max-width: 800px;
   max-height: 100%;
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
   z-index: 20;
   overflow-y: auto;
+  @include scrollbar-style($background-accent-overlay);
 
   color: $content-primary;
   background-color: $background-secondary;
   box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
 
   @media (min-width: $breakpoint-small) {
-    width: 90%;
-  }
-
-  @media (min-width: $breakpoint-large) {
-    width: 60%;
+    max-height: 90%;
   }
 
   @media (prefers-color-scheme: dark) {
-    color: $content-primary-dark-theme;
+    color: $content-secondary-dark-theme;
     background-color: $background-secondary-dark-theme;
+    @include scrollbar-style($background-accent-dark-dark-theme);
   }
 }
 
 .modalContentContainer {
   display: flex;
   flex-direction: column;
-  padding: 32px 48px 48px;
+  padding: 32px 48px 80px;
 }
 
 .heading {

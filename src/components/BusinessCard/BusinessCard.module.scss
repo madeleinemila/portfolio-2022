@@ -15,9 +15,16 @@
 }
 
 .jumpTo {
+  color: $content-primary;
   background-color: $background-accent-light;
+  padding: 0 4px;
 
   &:hover {
     text-decoration: underline;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+    background-color: $background-accent-light-dark-theme;
   }
 }

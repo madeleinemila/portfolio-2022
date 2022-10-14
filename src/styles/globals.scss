@@ -1,4 +1,5 @@
 @import "./tokens.module.scss";
+@import "./utils.module.scss";
 
 @font-face {
   font-family: "Crimson";
@@ -20,6 +21,10 @@ body {
   margin: 0;
   font-family: "Crimson", serif;
   background-color: $background-primary;
+
+  @media (prefers-color-scheme: dark) {
+    background-color: $background-primary-dark-theme;
+  }
 }
 
 a {
@@ -33,27 +38,11 @@ a {
 }
 
 body {
-  overflow: overlay;
-  $scrollbar-thumb: $background-accent-overlay;
-  $scrollbar-track: transparent;
-  $scrollbar-size: 10px;
+  @include scrollbar-style($background-accent-overlay);
 
-  /* Chrome, Safari */
-  &::-webkit-scrollbar {
-    width: $scrollbar-size;
-    height: $scrollbar-size;
+  @media (prefers-color-scheme: dark) {
+    @include scrollbar-style($background-accent-overlay-dark-theme);
   }
-
-  &::-webkit-scrollbar-thumb {
-    background: $scrollbar-thumb;
-  }
-
-  &::-webkit-scrollbar-track {
-    background: $scrollbar-track;
-  }
-
-  /* Firefox */
-  scrollbar-color: $scrollbar-thumb $scrollbar-track;
 }
 
 button {
@@ -64,4 +53,9 @@ button {
   &:hover {
     cursor: pointer;
   }
+}
+
+p,
+h5 {
+  -webkit-font-smoothing: antialiased;
 }

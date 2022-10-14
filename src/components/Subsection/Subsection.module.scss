@@ -2,6 +2,10 @@
 
 .container {
   color: $content-primary;
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+  }
 }
 
 .heading {
