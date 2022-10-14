@@ -1,8 +1,10 @@
 import React, { useCallback, useEffect, useState } from "react";
 import FeatureAnsarada from "./FeatureAnsarada/FeatureAnsarada";
+import FeatureBrooklyn from "./FeatureBrooklyn/FeatureBrooklyn";
 import FeatureCube from "./FeatureCube/FeatureCube";
 import FeatureGehms from "./FeatureGehms/FeatureGehms";
 import FeatureLighting from "./FeatureLighting/FeatureLighting";
+import FeatureO from "./FeatureO/FeatureO";
 import FeatureSC from "./FeatureSC/FeatureSC";
 import FeatureSubvixen from "./FeatureSubvixen/FeatureSubvixen";
 import FeatureTriage from "./FeatureTriage/FeatureTriage";
@@ -25,11 +27,13 @@ type FeatureContent = {
 const featureContentMap: Record<FeatureKey, FeatureContent> = {
   sc: { heading: "Software Engineer - SafetyCulture", content: <FeatureSC /> },
   ansarada: { heading: "Software Engineer - Ansarada", content: <FeatureAnsarada /> },
+  brooklyn: { heading: "'Brooklyn at Hibernian' - Live music x video", content: <FeatureBrooklyn /> },
   subvixen: { heading: "Subvixen", content: <FeatureSubvixen /> },
   triage: { heading: "Triage", content: <FeatureTriage /> },
   gehms: { heading: "Gehms", content: <FeatureGehms /> },
   ttt: { heading: "Tic tac toe", content: <FeatureTTT /> },
   lighting: { heading: "Interactive lighting demos", content: <FeatureLighting /> },
+  o: { heading: "'Origin of O' - TaikOz Concert", content: <FeatureO /> },
   vivid: { heading: "Vivid Sydney - Dichroic Dimensions", content: <FeatureVivid /> },
   cube: { heading: "Rubik's cube", content: <FeatureCube /> },
 };

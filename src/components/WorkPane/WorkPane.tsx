@@ -6,9 +6,11 @@ import Nav from "../Nav/Nav";
 import Thumbnail from "../Thumbnail/Thumbnail";
 
 import ansaradaImage from "../../../public/images/thumbnails/ansarada-bnw-invert-2.png";
+import brooklynImage from "../../../public/images/thumbnails/brooklyn-thumb.png";
 import cubeImage from "../../../public/images/thumbnails/cube-w-r.png";
 import gehmsImage from "../../../public/images/thumbnails/controllers-cu.jpg";
 import lightingImage from "../../../public/images/thumbnails/console-1.png";
+import oImage from "../../../public/images/thumbnails/o_thumb.jpg";
 import safetyCultureImage from "../../../public/images/thumbnails/sc-logo.png";
 import subvixenImage from "../../../public/images/thumbnails/light-pixels-1.jpg";
 import triageImage from "../../../public/images/thumbnails/triage_thumb.jpg";
@@ -51,6 +53,11 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
       <BorderedContent heading="Project sampler">
         <div className={styles.thumbnailContainer}>
           <Thumbnail
+            imageData={brooklynImage}
+            label="'Brooklyn at Hibernian' live music x video"
+            onClick={() => setFeature("brooklyn")}
+          />
+          <Thumbnail
             imageData={subvixenImage}
             label="'Subvixen' LED pixel mapper"
             onClick={() => setFeature("subvixen")}
@@ -63,6 +70,7 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
             label="Interactive lighting demos"
             onClick={() => setFeature("lighting")}
           />
+          <Thumbnail imageData={oImage} label="'Origin of O' Show" onClick={() => setFeature("o")} />
           <Thumbnail imageData={vividImage} label="Vivid Sydney" onClick={() => setFeature("vivid")} />
           <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
         </div>
