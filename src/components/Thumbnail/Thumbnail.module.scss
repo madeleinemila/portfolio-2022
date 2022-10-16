@@ -1,7 +1,7 @@
 @import "../../styles/tokens.module.scss";
 
 .container {
-  width: 100px;
+  width: 200px;
   margin: 24px;
 
   &:hover,
@@ -20,8 +20,7 @@
 }
 
 .labelContainer {
-  display: inline-block;
-  height: 104px;
+  margin-top: 8px;
 }
 
 .label {
@@ -29,7 +28,7 @@
 
   font-size: 18px;
   letter-spacing: 0.8px;
-  text-transform: lowercase;
+  font-weight: normal;
   color: $content-primary;
 
   /* For highlight effect */

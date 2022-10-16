@@ -54,24 +54,24 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
         <div className={styles.thumbnailContainer}>
           <Thumbnail
             imageData={brooklynImage}
-            label="'Brooklyn at Hibernian' live music & video"
+            label='"Brooklyn at Hibernian" live music & video'
             onClick={() => setFeature("brooklyn")}
           />
           <Thumbnail
             imageData={subvixenImage}
-            label="'Subvixen' LED pixel mapper"
+            label='"Subvixen" LED pixel mapper'
             onClick={() => setFeature("subvixen")}
           />
-          <Thumbnail imageData={gehmsImage} label="'Gehms' retro games" onClick={() => setFeature("gehms")} />
-          <Thumbnail imageData={triageImage} label="'Triage' knowledge base" onClick={() => setFeature("triage")} />
-          <Thumbnail imageData={tttImage} label="Tic tac toe" onClick={() => setFeature("ttt")} />
+          <Thumbnail imageData={gehmsImage} label='"Gehms" retro games' onClick={() => setFeature("gehms")} />
+          <Thumbnail imageData={triageImage} label='"Triage" knowledge base' onClick={() => setFeature("triage")} />
+          <Thumbnail imageData={tttImage} label="Tic Tac Toe" onClick={() => setFeature("ttt")} />
           <Thumbnail
             imageData={lightingImage}
             label="Interactive lighting demos"
             onClick={() => setFeature("lighting")}
           />
           <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
-          <Thumbnail imageData={oImage} label="'Origin of O' Show" onClick={() => setFeature("o")} />
+          <Thumbnail imageData={oImage} label='"Origin of O" live show' onClick={() => setFeature("o")} />
           <Thumbnail imageData={vividImage} label="Vivid Sydney" onClick={() => setFeature("vivid")} />
         </div>
       </BorderedContent>

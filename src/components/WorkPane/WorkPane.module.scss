@@ -13,7 +13,7 @@
 .thumbnailContainer {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 48px;
 }
