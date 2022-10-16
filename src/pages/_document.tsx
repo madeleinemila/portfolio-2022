@@ -1,6 +1,6 @@
 import React from "react";
 import { Html, Head, Main, NextScript } from "next/document";
-import loadingStyles from "./utils/loading-styles";
+import loadingStyles from "../utils/loading-styles";
 
 function Document() {
   return (
