@@ -24,6 +24,11 @@
 
 .bottomNav {
   margin-top: auto;
+  margin-bottom: 64px;
+
+  @media (min-width: $breakpoint-small) {
+    margin-bottom: 32px;
+  }
 }
 
 .header {
