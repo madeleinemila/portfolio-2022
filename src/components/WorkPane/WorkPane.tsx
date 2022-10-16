@@ -62,17 +62,17 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
             label="'Subvixen' LED pixel mapper"
             onClick={() => setFeature("subvixen")}
           />
-          <Thumbnail imageData={triageImage} label="'Triage' knowledge base" onClick={() => setFeature("triage")} />
           <Thumbnail imageData={gehmsImage} label="'Gehms' retro games" onClick={() => setFeature("gehms")} />
+          <Thumbnail imageData={triageImage} label="'Triage' knowledge base" onClick={() => setFeature("triage")} />
           <Thumbnail imageData={tttImage} label="Tic tac toe" onClick={() => setFeature("ttt")} />
           <Thumbnail
             imageData={lightingImage}
             label="Interactive lighting demos"
             onClick={() => setFeature("lighting")}
           />
+          <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
           <Thumbnail imageData={oImage} label="'Origin of O' Show" onClick={() => setFeature("o")} />
           <Thumbnail imageData={vividImage} label="Vivid Sydney" onClick={() => setFeature("vivid")} />
-          <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
         </div>
       </BorderedContent>
 

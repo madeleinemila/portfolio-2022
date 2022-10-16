@@ -9,8 +9,8 @@ const FeatureBrooklyn = () => {
       </p>
       <br />
       <p>
-        Collaborating with friends in audio engineering and videography, we filmed and livestreamed indie Australian
-        artists. I was responsible for transforming my house into a livestream studio, as well as camera & live
+        Collaborating with friends in audio engineering and videography, we filmed and livestreamed Australian &
+        international artists. I was responsible for creating a livestream studio, camera operating & live
         vision-switching.
       </p>
       <br />
