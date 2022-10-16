@@ -13,7 +13,7 @@
     color: $content-primary-dark-theme;
   }
 
-  @media (min-width) {
+  @media (min-width: $breakpoint-small) {
     padding: 16px;
   }
 }
