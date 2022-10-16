@@ -1,9 +1,14 @@
+@import "../../styles/tokens.module.scss";
+
 .container {
   display: flex;
   flex-direction: column;
   max-width: 960px;
-  padding: 16px;
   gap: 64px;
+
+  @media (min-width: $breakpoint-small) {
+    padding: 16px;
+  }
 }
 
 .row {
