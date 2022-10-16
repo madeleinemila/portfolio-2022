@@ -14,6 +14,7 @@ export const Thumbnail = ({ imageData, label, onClick }: ThumbnailProps): JSX.El
       <Image
         src={imageData}
         alt={`Thumbnail for ${label}`}
+        priority
         placeholder="blur"
         width="100"
         height="100"

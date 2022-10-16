@@ -1,7 +1,6 @@
 @mixin scrollbar-style($thumb-color) {
-  overflow: overlay;
   $track-color: transparent;
-  $scrollbar-size: 10px;
+  $scrollbar-size: 8px;
 
   /* Chrome, Safari */
   &::-webkit-scrollbar {
@@ -11,6 +10,7 @@
 
   &::-webkit-scrollbar-thumb {
     background: $thumb-color;
+    border-radius: 4px;
   }
 
   &::-webkit-scrollbar-track {

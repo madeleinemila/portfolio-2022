@@ -46,7 +46,7 @@ const FeatureTriage = () => {
           <p>Highlights: building a full-stack application with fuzzy search and bookmarking.</p>
         </div>
         <div className={cx(styles.featureFlex3, styles.featureImage)}>
-          <Image src={triageHomeImage} alt="Screenshot of public home page" />
+          <Image src={triageHomeImage} alt="Screenshot of public home page" placeholder="blur" />
         </div>
       </div>
       {/* TODO: Carousel alt images */}

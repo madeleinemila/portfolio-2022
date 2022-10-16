@@ -41,7 +41,7 @@ const FeatureCube = () => {
         rel="noreferrer"
         className={cx(styles.featureFlex2, styles.featureImage)}
       >
-        <Image src={cubeImage} alt="Net of the Rubik's cube" />
+        <Image src={cubeImage} alt="Net of the Rubik's cube" placeholder="blur" />
       </a>
     </div>
   );

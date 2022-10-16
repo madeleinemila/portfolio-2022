@@ -1,20 +1,15 @@
 import { forwardRef, ForwardRefRenderFunction } from "react";
-import dynamic from "next/dynamic";
+import Graph from "../Graph/Graph";
 import Nav from "../Nav/Nav";
-
-const Graph = dynamic(() => import("../Graph/Graph").then((mod) => mod.default), {
-  /* Only import client-side since the window object must be present first */
-  ssr: false,
-});
-
 import styles from "./MainPane.module.scss";
 
 type MainPaneProps = {
   jumpToAbout: () => void;
   jumpToWork: () => void;
+  show: () => void;
 };
 
-const MainPane: ForwardRefRenderFunction<HTMLDivElement, MainPaneProps> = ({ jumpToAbout, jumpToWork }, ref) => {
+const MainPane: ForwardRefRenderFunction<HTMLDivElement, MainPaneProps> = ({ jumpToAbout, jumpToWork, show }, ref) => {
   return (
     <div ref={ref} className={styles.container}>
       <Nav direction="up" label="About" onClick={jumpToAbout} />
@@ -24,7 +19,7 @@ const MainPane: ForwardRefRenderFunction<HTMLDivElement, MainPaneProps> = ({ jum
         <h2 className={styles.subtitle}>Software Engineer</h2>
       </header>
 
-      <Graph />
+      <Graph onGraphLoad={show} />
 
       <div className={styles.bottomNav}>
         <Nav direction="down" label="Work" onClick={jumpToWork} />

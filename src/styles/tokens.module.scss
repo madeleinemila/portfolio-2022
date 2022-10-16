@@ -38,9 +38,13 @@ $heading-letter-spacing: 5px;
   font-weight: normal;
   text-align: center;
 
-  font-size: 32px;
+  font-size: 24px;
   letter-spacing: $heading-letter-spacing;
   margin-right: -$heading-letter-spacing; /* offset noticeable trailing space from letter-spacing */
+
+  @media (min-width: $breakpoint-small) {
+    font-size: 32px;
+  }
 }
 
 @mixin subheading-styles() {

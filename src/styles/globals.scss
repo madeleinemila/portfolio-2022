@@ -38,11 +38,7 @@ a {
 }
 
 body {
-  @include scrollbar-style($background-accent-overlay);
-
-  @media (prefers-color-scheme: dark) {
-    @include scrollbar-style($background-accent-overlay-dark-theme);
-  }
+  @include scrollbar-style(#0003);
 }
 
 button {

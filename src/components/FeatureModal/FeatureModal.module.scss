@@ -59,7 +59,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   transform: translateX(-50%) translateY(-50%);
   z-index: 20;
   overflow-y: auto;
-  @include scrollbar-style($background-accent-overlay);
+  @include scrollbar-style(#90ccbe44);
 
   color: $content-primary;
   background-color: $background-secondary;

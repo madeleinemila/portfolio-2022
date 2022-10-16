@@ -25,7 +25,11 @@ const Sketch = dynamic(() => import("react-p5").then((mod) => mod.default), {
 
 const particles = new Array(INIT_NUM_PARTICLES);
 
-const Graph = (): JSX.Element => {
+type GraphProps = {
+  onGraphLoad: () => void;
+};
+
+const Graph = ({ onGraphLoad }: GraphProps): JSX.Element => {
   // Init refs we'll use for layout (for horizontal axis position and how to augment the graph lines)
   const deltasRef = useRef(DELTAS);
   const yUpperRef = useRef(Y_UPPER_SPACE);
@@ -44,7 +48,7 @@ const Graph = (): JSX.Element => {
       if (particles.length > MAX_PARTICLES) return;
       const pos = generateRandomPos(sketchWidth);
       const vel = generateRandomVel();
-      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 4, vel));
+      particles.push(new Particle(pos, yUpperRef.current, Math.abs(vel) * 3, vel));
     }
   }, []);
 
@@ -69,7 +73,7 @@ const Graph = (): JSX.Element => {
   }, []);
 
   const onScroll = useCallback(() => {
-    makeNParticles(10, window.innerWidth);
+    makeNParticles(1, window.innerWidth);
   }, [makeNParticles]);
 
   useEffect(() => {
@@ -83,6 +87,10 @@ const Graph = (): JSX.Element => {
 
   const setup = useCallback(
     (sketch: p5, canvasParentEl: Element) => {
+      canvasParentEl.replaceChildren();
+
+      onGraphLoad();
+
       if (window.innerWidth >= GRAPH_BREAKPOINT) {
         sketch.createCanvas(window.innerWidth, SKETCH_HEIGHT).parent(canvasParentEl);
       } else {
@@ -107,7 +115,7 @@ const Graph = (): JSX.Element => {
         ); /* using velocity to generate size; further away = tinier = look slower */
       }
     },
-    [graphInit]
+    [graphInit, onGraphLoad]
   );
 
   const draw = useCallback(

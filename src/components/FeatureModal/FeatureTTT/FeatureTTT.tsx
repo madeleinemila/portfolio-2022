@@ -40,7 +40,7 @@ const FeatureTTT = () => {
       </div>
       <div className={cx(styles.featureFlex1, styles.image, styles.dropShadow)}>
         <a href="https://madeleinemila.github.io/tictactoe" target="_blank" rel="noreferrer">
-          <Image src={tictactoeImage} alt="Screenshot of Tic Tac Toe level 10" layout="responsive" />
+          <Image src={tictactoeImage} alt="Screenshot of Tic Tac Toe level 10" layout="responsive" placeholder="blur" />
         </a>
       </div>
     </div>
