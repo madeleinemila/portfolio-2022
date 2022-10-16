@@ -13,7 +13,7 @@ const FeatureO = () => {
         drummer then played to the tempo of his own heartbeat, gradually accelerating.
       </p>
       <br />
-      <video preload="none" autoPlay loop muted>
+      <video preload="none" autoPlay playsInline loop muted>
         <source src="/images/features/origin-of-o-clip-mute.mp4" type="video/mp4" />
       </video>
     </div>
