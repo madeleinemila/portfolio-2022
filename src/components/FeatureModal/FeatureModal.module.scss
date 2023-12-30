@@ -57,7 +57,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   top: 50%;
   left: 50%;
   transform: translateX(-50%) translateY(-50%);
-  z-index: 20;
+  z-index: $zindex-modal;
   overflow-y: auto;
   @include scrollbar-style(#90ccbe44);
 

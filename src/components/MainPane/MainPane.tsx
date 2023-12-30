@@ -19,10 +19,12 @@ const MainPane: ForwardRefRenderFunction<HTMLDivElement, MainPaneProps> = ({ jum
         <h2 className={styles.subtitle}>Software Engineer</h2>
       </header>
 
-      <Graph onGraphLoad={show} />
-
       <div className={styles.bottomNav}>
         <Nav direction="down" label="Work" onClick={jumpToWork} />
+      </div>
+
+      <div className={styles.graphContainer}>
+        <Graph onGraphLoad={show} />
       </div>
     </div>
   );

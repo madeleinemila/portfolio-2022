@@ -2,6 +2,7 @@
 
 .container {
   display: flex;
+  position: relative;
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
@@ -24,10 +25,17 @@
 .bottomNav {
   margin-top: auto;
   margin-bottom: 64px;
+  z-index: $zindex-button-over-bg;
 
   @media (min-width: $breakpoint-small) {
     margin-bottom: 32px;
   }
+}
+
+.graphContainer {
+  position: absolute;
+  bottom: 0;
+  height: 70%;
 }
 
 .header {
