@@ -1,8 +1,6 @@
 @import "../../styles/tokens.module.scss";
 
 .container {
-  width: 200px;
-
   &:hover,
   &:focus-visible {
     outline: none;
@@ -19,6 +17,7 @@
 }
 
 .labelContainer {
+  width: 200px;
   margin-top: 8px;
 }
 
