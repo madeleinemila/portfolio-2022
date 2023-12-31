@@ -20,3 +20,12 @@
   /* Firefox */
   scrollbar-color: $thumb-color $track-color;
 }
+
+@mixin focus-style() {
+  border: none;
+  outline: dashed 1px #0008;
+
+  @media (prefers-color-scheme: dark) {
+    outline: dashed 1px #fff8;
+  }
+}

@@ -10,8 +10,7 @@
   box-sizing: border-box;
 
   &:focus-visible {
-    border: none;
-    outline: dashed 1px #0008;
+    @include focus-style();
   }
 }
 
@@ -31,7 +30,8 @@ a {
   color: inherit;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:focus {
     cursor: pointer;
     text-decoration: underline;
   }

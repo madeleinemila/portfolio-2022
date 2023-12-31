@@ -1,4 +1,5 @@
 import React, { useCallback, useEffect, useState } from "react";
+import FocusLock from "react-focus-lock";
 import FeatureAnsarada from "./FeatureAnsarada/FeatureAnsarada";
 import FeatureBrooklyn from "./FeatureBrooklyn/FeatureBrooklyn";
 import FeatureCube from "./FeatureCube/FeatureCube";
@@ -68,7 +69,7 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
   }, []);
 
   return (
-    <>
+    <FocusLock returnFocus>
       <div className={styles.background} onClick={onClose}>
         <svg className={styles.animatedSquareContainer}>
           <rect className={styles.animatedSquare} onAnimationEnd={handleAnimationEnd} />
@@ -85,7 +86,7 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
           </div>
         </div>
       )}
-    </>
+    </FocusLock>
   );
 };
 
