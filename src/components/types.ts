@@ -3,7 +3,6 @@ export type FeatureKey =
   | "ansarada"
   | "brooklyn"
   | "subvixen"
-  | "triage"
   | "gehms"
   | "ttt"
   | "lighting"

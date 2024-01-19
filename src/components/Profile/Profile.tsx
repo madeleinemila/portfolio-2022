@@ -49,8 +49,9 @@ const Profile = ({ onJumpToWork }: ProfileProps): JSX.Element => {
             <p>Frontend & backend web development</p>
             <p>Film & television production, post-production & visual effects</p>
             <p>Interaction design & realtime multimedia installation</p>
-            <p>Live music lighting & video</p>
-            <p>Broadcast television operations</p>
+            <p>Live music lighting, video & camera</p>
+            <p>Broadcast operations</p>
+            <p>Music production</p>
           </Subsection>
         </div>
 

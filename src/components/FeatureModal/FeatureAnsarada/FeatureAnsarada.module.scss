@@ -1,0 +1,7 @@
+@import "../shared.module.scss";
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}

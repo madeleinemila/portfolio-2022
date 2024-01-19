@@ -52,7 +52,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 .modal {
   position: fixed;
   width: 100%;
-  max-width: 800px;
+  max-width: 1000px;
   max-height: 100%;
   top: 50%;
   left: 50%;
@@ -87,6 +87,11 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 
   margin-bottom: 48px;
   padding: 0 24px;
+
+  text-wrap: balance;
+  @media (min-width: $breakpoint-small) {
+    text-wrap: pretty;
+  }
 }
 
 .close {

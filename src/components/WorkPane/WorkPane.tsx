@@ -13,7 +13,6 @@ import lightingImage from "../../../public/images/thumbnails/console-1.png";
 import oImage from "../../../public/images/thumbnails/o_thumb.jpg";
 import safetyCultureImage from "../../../public/images/thumbnails/sc-logo.png";
 import subvixenImage from "../../../public/images/thumbnails/light-pixels-1.jpg";
-import triageImage from "../../../public/images/thumbnails/triage_thumb.jpg";
 import tttImage from "../../../public/images/thumbnails/ttt_thumb_blowup.jpg";
 import vividImage from "../../../public/images/thumbnails/dichroic-color.png";
 import type { FeatureKey } from "../types";
@@ -63,14 +62,13 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
             onClick={() => setFeature("subvixen")}
           />
           <Thumbnail imageData={gehmsImage} label='"Gehms" retro games' onClick={() => setFeature("gehms")} />
-          <Thumbnail imageData={triageImage} label='"Triage" knowledge base' onClick={() => setFeature("triage")} />
-          <Thumbnail imageData={tttImage} label="Tic Tac Toe" onClick={() => setFeature("ttt")} />
           <Thumbnail
             imageData={lightingImage}
             label="Interactive lighting demos"
             onClick={() => setFeature("lighting")}
           />
           <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
+          <Thumbnail imageData={tttImage} label="Tic Tac Toe" onClick={() => setFeature("ttt")} />
           <Thumbnail imageData={oImage} label='"Origin of O" live show' onClick={() => setFeature("o")} />
           <Thumbnail imageData={vividImage} label="Vivid Sydney" onClick={() => setFeature("vivid")} />
         </div>

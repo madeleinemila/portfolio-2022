@@ -15,7 +15,7 @@ type AboutPaneProps = {
 const AboutPane: ForwardRefRenderFunction<HTMLDivElement, AboutPaneProps> = ({ jumpToMain, jumpToWork }, ref) => {
   return (
     <div ref={ref} className={styles.container}>
-      <BorderedContent heading="About">
+      <BorderedContent heading="about">
         <Intro />
         <Profile onJumpToWork={jumpToWork} />
         <Nav direction="down" onClick={jumpToMain} variant="dark" />

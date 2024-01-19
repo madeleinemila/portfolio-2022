@@ -8,7 +8,6 @@ import FeatureLighting from "./FeatureLighting/FeatureLighting";
 import FeatureO from "./FeatureO/FeatureO";
 import FeatureSC from "./FeatureSC/FeatureSC";
 import FeatureSubvixen from "./FeatureSubvixen/FeatureSubvixen";
-import FeatureTriage from "./FeatureTriage/FeatureTriage";
 import FeatureTTT from "./FeatureTTT/FeatureTTT";
 import FeatureVivid from "./FeatureVivid/FeatureVivid";
 import type { FeatureKey } from "../types";
@@ -26,11 +25,10 @@ type FeatureContent = {
 };
 
 const featureContentMap: Record<FeatureKey, FeatureContent> = {
-  sc: { heading: "Software Engineer - SafetyCulture", content: <FeatureSC /> },
+  sc: { heading: "Software Engineer\u2060- Safety\u00ADCulture", content: <FeatureSC /> },
   ansarada: { heading: "Software Engineer - Ansarada", content: <FeatureAnsarada /> },
   brooklyn: { heading: "'Brooklyn at Hibernian' - Live music & video", content: <FeatureBrooklyn /> },
   subvixen: { heading: "Subvixen", content: <FeatureSubvixen /> },
-  triage: { heading: "Triage", content: <FeatureTriage /> },
   gehms: { heading: "Gehms", content: <FeatureGehms /> },
   ttt: { heading: "Tic tac toe", content: <FeatureTTT /> },
   lighting: { heading: "Interactive lighting demos", content: <FeatureLighting /> },
