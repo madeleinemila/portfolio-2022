@@ -25,7 +25,7 @@ type FeatureContent = {
 };
 
 const featureContentMap: Record<FeatureKey, FeatureContent> = {
-  sc: { heading: "Software Engineer\u2060- Safety\u00ADCulture", content: <FeatureSC /> },
+  sc: { heading: "Software Engineer - SafetyCulture", content: <FeatureSC /> },
   ansarada: { heading: "Software Engineer - Ansarada", content: <FeatureAnsarada /> },
   brooklyn: { heading: "'Brooklyn at Hibernian' - Live music & video", content: <FeatureBrooklyn /> },
   subvixen: { heading: "Subvixen", content: <FeatureSubvixen /> },

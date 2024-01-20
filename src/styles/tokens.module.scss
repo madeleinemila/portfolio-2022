@@ -38,9 +38,13 @@ $heading-letter-spacing: 5px;
   font-weight: normal;
   text-align: center;
 
-  font-size: 24px;
+  font-size: 22px;
   letter-spacing: $heading-letter-spacing;
   margin-right: -$heading-letter-spacing; /* offset noticeable trailing space from letter-spacing */
+
+  @media (min-width: $breakpoint-xsmall) {
+    font-size: 24px;
+  }
 
   @media (min-width: $breakpoint-small) {
     font-size: 32px;
@@ -69,6 +73,7 @@ $heading-letter-spacing: 5px;
 
 /* Breakpoints */
 
+$breakpoint-xsmall: 480px;
 $breakpoint-small: 640px;
 $breakpoint-large: 1120px;
 

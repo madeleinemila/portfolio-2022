@@ -86,11 +86,11 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   @include heading-styles;
 
   margin-bottom: 48px;
-  padding: 0 24px;
+  text-wrap: pretty;
 
-  text-wrap: balance;
-  @media (min-width: $breakpoint-small) {
-    text-wrap: pretty;
+  padding: 0;
+  @media (min-width: $breakpoint-xsmall) {
+    padding: 0 24px;
   }
 }
 
