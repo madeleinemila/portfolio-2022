@@ -1,16 +1,18 @@
 import Image, { StaticImageData } from "next/image";
+import cx from "classnames";
 
 import styles from "./Thumbnail.module.scss";
 
 type ThumbnailProps = {
   imageData: StaticImageData;
   label: string;
+  isActiveFeature: boolean;
   onClick: () => void;
 };
 
-export const Thumbnail = ({ imageData, label, onClick }: ThumbnailProps): JSX.Element => {
+export const Thumbnail = ({ imageData, label, isActiveFeature, onClick }: ThumbnailProps): JSX.Element => {
   return (
-    <button onClick={onClick} className={styles.container}>
+    <button onClick={onClick} className={cx(styles.container, isActiveFeature && styles.active)}>
       <Image
         src={imageData}
         alt={`Thumbnail for ${label}`}

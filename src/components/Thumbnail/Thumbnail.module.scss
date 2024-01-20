@@ -2,7 +2,8 @@
 @import "../../styles/utils.module.scss";
 
 .container {
-  &:hover {
+  &:hover,
+  &.active {
     .label {
       /* For highlight effect */
       background-position: -99% 0;

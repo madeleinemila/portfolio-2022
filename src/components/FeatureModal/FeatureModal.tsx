@@ -50,9 +50,16 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
   );
 
   useEffect(() => {
+    const { documentElement } = document;
+    const scrollbarWidth = window.innerWidth - documentElement.clientWidth;
+
     // Prevent body scroll when modal is open
     document.body.style.overflow = "hidden";
-    document.body.style.paddingRight = "8px"; // Scrollbar width as per CSS
+
+    // Prevent jump in content
+    if (scrollbarWidth) {
+      document.body.style.paddingRight = `${scrollbarWidth}px`;
+    }
 
     window.addEventListener("keydown", escapeToClose);
     return () => {

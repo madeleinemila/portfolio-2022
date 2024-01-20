@@ -37,11 +37,13 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
       <BorderedContent heading="Professional">
         <div className={styles.thumbnailContainer}>
           <Thumbnail
+            isActiveFeature={feature === "sc"}
             imageData={safetyCultureImage}
             label="Software Engineer @ SafetyCulture"
             onClick={() => setFeature("sc")}
           />
           <Thumbnail
+            isActiveFeature={feature === "ansarada"}
             imageData={ansaradaImage}
             label="Software Engineer @ Ansarada"
             onClick={() => setFeature("ansarada")}
@@ -52,25 +54,53 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
       <BorderedContent heading="Projects">
         <div className={styles.thumbnailContainer}>
           <Thumbnail
+            isActiveFeature={feature === "brooklyn"}
             imageData={brooklynImage}
             label='"Brooklyn at Hibernian" live music & video'
             onClick={() => setFeature("brooklyn")}
           />
           <Thumbnail
+            isActiveFeature={feature === "subvixen"}
             imageData={subvixenImage}
             label='"Subvixen" LED pixel mapper'
             onClick={() => setFeature("subvixen")}
           />
-          <Thumbnail imageData={gehmsImage} label='"Gehms" retro games' onClick={() => setFeature("gehms")} />
           <Thumbnail
+            isActiveFeature={feature === "gehms"}
+            imageData={gehmsImage}
+            label='"Gehms" retro games'
+            onClick={() => setFeature("gehms")}
+          />
+          <Thumbnail
+            isActiveFeature={feature === "lighting"}
             imageData={lightingImage}
             label="Interactive lighting demos"
             onClick={() => setFeature("lighting")}
           />
-          <Thumbnail imageData={cubeImage} label="Rubik's cube" onClick={() => setFeature("cube")} />
-          <Thumbnail imageData={tttImage} label="Tic Tac Toe" onClick={() => setFeature("ttt")} />
-          <Thumbnail imageData={oImage} label='"Origin of O" live show' onClick={() => setFeature("o")} />
-          <Thumbnail imageData={vividImage} label="Vivid Sydney" onClick={() => setFeature("vivid")} />
+          <Thumbnail
+            isActiveFeature={feature === "cube"}
+            imageData={cubeImage}
+            label="Rubik's cube"
+            onClick={() => setFeature("cube")}
+          />
+          <Thumbnail
+            isActiveFeature={feature === "ttt"}
+            imageData={tttImage}
+            label="Tic Tac Toe"
+            onClick={() => setFeature("ttt")}
+          />
+          <Thumbnail
+            isActiveFeature={feature === "o"}
+            imageData={oImage}
+            label='"Origin of O" live show'
+            onClick={() => setFeature("o")}
+          />
+          <Thumbnail
+            isActiveFeature={feature === "vivid"}
+            imageData={vividImage}
+            label="Vivid Sydney"
+            onClick={() => setFeature("vivid")}
+          />
         </div>
       </BorderedContent>
 
