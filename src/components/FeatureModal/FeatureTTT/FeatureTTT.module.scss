@@ -1,7 +1,11 @@
 @import "../shared.module.scss";
 
 .image {
-  min-width: 360px;
-  max-width: 600px;
   margin: 0 auto;
+  max-width: 600px;
+  min-width: 260px;
+
+  @media (min-width: $breakpoint-small) {
+    min-width: 360px;
+  }
 }
