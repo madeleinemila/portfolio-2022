@@ -38,7 +38,11 @@ $min-cell-width: 300px;
 }
 
 .featureImage {
-  min-width: 360px;
+  min-width: 260px;
+
+  @media (min-width: $breakpoint-small) {
+    min-width: 360px;
+  }
 }
 
 .caption {

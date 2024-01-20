@@ -5,7 +5,7 @@ import controllerWipImage from "../../../../public/images/features/controllers-w
 import gehmsGif from "../../../../public/images/features/controller-video-quick.gif";
 import gehmsHomeImage from "../../../../public/images/features/gehms-home.jpg";
 import gehmsRoidsImage from "../../../../public/images/features/gehms-roids.png";
-import styles from "../shared.module.scss";
+import styles from "./FeatureGehms.module.scss";
 
 const FeatureGehms = () => {
   return (
@@ -69,7 +69,7 @@ const FeatureGehms = () => {
           <Image src={controllerCUImage} alt="Controller close-up" placeholder="blur" />
         </div>
       </div>
-      <div className={styles.centered}>
+      <div className={styles.suppImages}>
         <div className={styles.featureImage}>
           <Image src={gehmsHomeImage} alt="Screenshot of homepage" placeholder="blur" />
         </div>
