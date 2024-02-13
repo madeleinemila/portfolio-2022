@@ -9,7 +9,7 @@ const FeatureAnsarada = () => {
   return (
     <div className={styles.featureContentContainer}>
       <p>
-        2.5 years as a software engineer for leading virtual data room provider,{" "}
+        2.5 years as a software engineer for leading virtual data-room provider{" "}
         <a className={styles.featureLink} href="https://ansarada.com/" target="_blank" rel="noreferrer">
           Ansarada
         </a>

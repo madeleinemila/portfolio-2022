@@ -39,14 +39,11 @@ const FeatureGehms = () => {
             <li>JavaScript, Phaser &amp; Ruby on Rails for the games</li>
             <li>Arduino and Node.js for the controllers</li>
           </ul>
+          <br />
           <p>Created for General Assembly&apos;s Software Engineering Immersive, week 9 group assignment.</p>
           <p>
-            My role: creating the hardware controllers, and the software to drive their interaction with the browser and
-            Phaser games.
-          </p>
-          <p>
-            Highlights: working with WebSockets, Node, and figuring out low latency communication between hardware and
-            the browser.
+            My role: creating the hardware controllers and the software to drive their low latency interaction with the
+            browser and Phaser games.
           </p>
         </div>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>

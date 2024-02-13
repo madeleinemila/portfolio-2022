@@ -4,13 +4,13 @@ const FeatureBrooklyn = () => {
   return (
     <div>
       <p>
-        I hosted live music in my living room and on the rooftop of my building, in a project named &lsquo;Brooklyn at
-        Hibernian&rsquo; in Sydney&apos;s Hibernian House.
+        A video & web streaming project for live music performance, hosted from my self-built living room studio in
+        Sydney&apos;s Hibernian House.
       </p>
       <br />
       <p>
         Collaborating with friends in audio engineering and videography, we filmed and livestreamed Australian &
-        international artists. I was responsible for creating a livestream studio, camera operating & live
+        international artists. For the project I built the AV/livestream studio, camera-operated & did live
         vision-switching.
       </p>
       <br />

@@ -9,6 +9,9 @@ $background-accent-light-dark-theme: #15765f;
 $background-accent-overlay: #66cab393;
 $background-accent-overlay-dark-theme: #ffffff11;
 
+$background-accent-feature: #90ccbe44;
+$background-accent-feature-dark-theme: #112338;
+
 $background-primary: #eee;
 $background-primary-dark-theme: #25252a;
 
@@ -32,22 +35,22 @@ $border-primary: #333;
 
 $heading-letter-spacing: 5px;
 
-@mixin heading-styles() {
+@mixin heading-styles($sm-font-size: 22px, $md-font-size: 24px, $lg-font-size: 32px) {
   font-family: "Futura", sans-serif;
   text-transform: uppercase;
   font-weight: normal;
   text-align: center;
 
-  font-size: 22px;
+  font-size: $sm-font-size;
   letter-spacing: $heading-letter-spacing;
   margin-right: -$heading-letter-spacing; /* offset noticeable trailing space from letter-spacing */
 
   @media (min-width: $breakpoint-xsmall) {
-    font-size: 24px;
+    font-size: $md-font-size;
   }
 
   @media (min-width: $breakpoint-small) {
-    font-size: 32px;
+    font-size: $lg-font-size;
   }
 }
 

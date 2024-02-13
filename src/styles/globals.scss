@@ -38,7 +38,11 @@ a {
 }
 
 body {
-  @include scrollbar-style(#fff2);
+  @include scrollbar-style(#649c8f77);
+
+  @media (prefers-color-scheme: dark) {
+    @include scrollbar-style(#fff2);
+  }
 }
 
 button {

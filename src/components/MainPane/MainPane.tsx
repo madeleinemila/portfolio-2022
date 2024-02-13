@@ -16,7 +16,7 @@ const MainPane: ForwardRefRenderFunction<HTMLDivElement, MainPaneProps> = ({ jum
 
       <header className={styles.header}>
         <h1 className={styles.title}>Madeleine Milasas</h1>
-        <h2 className={styles.subtitle}>Software Engineer</h2>
+        <h2 className={styles.subtitle}>Software Engineer & Maker</h2>
       </header>
 
       <div className={styles.bottomNav}>
