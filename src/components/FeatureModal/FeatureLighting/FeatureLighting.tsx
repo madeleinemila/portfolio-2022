@@ -1,7 +1,4 @@
-import Image from "next/image";
 import cx from "classnames";
-import fixtureMotionImage from "../../../../public/images/features/yt-prg-motion-play.jpg";
-import fixtureMusicImage from "../../../../public/images/features/yt-prg-music-play.jpg";
 import styles from "../shared.module.scss";
 
 const FeatureLighting = () => {
@@ -18,21 +15,16 @@ const FeatureLighting = () => {
       </div>
       <div className={styles.featureFlexRow}>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
-          <a href="https://www.youtube.com/watch?v=HKlNh8WZ-WQ" target="_blank" rel="noreferrer">
-            <span className={styles.caption}>Fixture control with music</span>
-            <Image src={fixtureMusicImage} alt="Interactive lights and music" layout="responsive" placeholder="blur" />
-          </a>
+          <span>Fixture control with music</span>
+          <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
+            <source src="/images/features/fixture-control-music.mp4" type="video/mp4" />
+          </video>
         </div>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
-          <a href="https://www.youtube.com/watch?v=I5pzQq6Ubhg" target="_blank" rel="noreferrer">
-            <span className={styles.caption}>Fixture control with motion</span>
-            <Image
-              src={fixtureMotionImage}
-              alt="Interactive lights and movement"
-              layout="responsive"
-              placeholder="blur"
-            />
-          </a>
+          <span>Fixture control with motion</span>
+          <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
+            <source src="/images/features/fixture-control-motion.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </div>
