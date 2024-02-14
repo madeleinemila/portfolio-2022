@@ -1,11 +1,1 @@
-export type FeatureKey =
-  | "sc"
-  | "ansarada"
-  | "brooklyn"
-  | "subvixen"
-  | "gehms"
-  | "ttt"
-  | "lighting"
-  | "o"
-  | "vivid"
-  | "cube";
+export type FeatureKey = "sc" | "ansarada" | "brooklyn" | "subvixen" | "gehms" | "lighting" | "o" | "vivid" | "cube";

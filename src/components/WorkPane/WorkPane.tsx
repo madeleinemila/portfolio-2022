@@ -13,7 +13,6 @@ import lightingImage from "../../../public/images/thumbnails/console-1.png";
 import oImage from "../../../public/images/thumbnails/o_thumb.jpg";
 import safetyCultureImage from "../../../public/images/thumbnails/sc-logo.png";
 import subvixenImage from "../../../public/images/thumbnails/light-pixels-1.jpg";
-import tttImage from "../../../public/images/thumbnails/ttt_thumb_blowup.jpg";
 import vividImage from "../../../public/images/thumbnails/dichroic-color.png";
 import type { FeatureKey } from "../types";
 
@@ -82,12 +81,6 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
             imageData={cubeImage}
             label="Rubik's cube"
             onClick={() => setFeature("cube")}
-          />
-          <Thumbnail
-            isActiveFeature={feature === "ttt"}
-            imageData={tttImage}
-            label="Tic Tac Toe"
-            onClick={() => setFeature("ttt")}
           />
           <Thumbnail
             isActiveFeature={feature === "o"}
