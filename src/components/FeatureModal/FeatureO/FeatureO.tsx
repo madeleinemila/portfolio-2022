@@ -6,7 +6,10 @@ const FeatureO = () => {
         live drumming with interactive projections & movement-controlled sound effects.
       </p>
       <br />
-      <p>My role: design & implementation of realtime interactive media.</p>
+      <p>
+        My role: design & implementation of hardware and software systems for realtime interaction with music and
+        projections.
+      </p>
       <br />
       <p>
         Highlight: building a pathway for a drummer&apos;s heartbeat to control audio samples and projections. The
