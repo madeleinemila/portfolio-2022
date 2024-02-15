@@ -1,0 +1,14 @@
+@import "../shared.module.scss";
+
+.videoContainer {
+  margin-top: 60px;
+  max-width: 800px;
+
+  @media (min-width: $breakpoint-medium) {
+    max-width: 540px;
+  }
+}
+
+.borderRadius {
+  border-radius: 4px;
+}

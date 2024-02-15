@@ -1,4 +1,5 @@
 import { useCallback, useRef } from "react";
+import cx from "classnames";
 import styles from "./FeatureSC.module.scss";
 
 const FeatureSC = () => {
@@ -66,7 +67,14 @@ const FeatureSC = () => {
           Bulk edit
         </button>
       </div>
-      <video ref={demoVideoRef} className={styles.fullWidthVideo} preload="metadata" playsInline muted controls>
+      <video
+        ref={demoVideoRef}
+        className={cx(styles.fullWidthVideo, styles.videoBorder)}
+        preload="metadata"
+        playsInline
+        muted
+        controls
+      >
         <source src="/images/features/sc-cafe-example.mp4" type="video/mp4" />
       </video>
       <br />

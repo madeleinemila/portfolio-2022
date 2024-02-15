@@ -2,48 +2,46 @@ import Image from "next/image";
 import cx from "classnames";
 import cubeImage from "../../../../public/images/features/cube.png";
 
-import styles from "../shared.module.scss";
+import styles from "./FeatureCube.module.scss";
 
 const FeatureCube = () => {
   return (
-    <div className={styles.featureFlexRow}>
-      <div className={styles.featureFlex3}>
-        <p>A 2D interactive Rubik&apos;s Cube map built with Processing.</p>
-        <p>Created for Production Resource Group (PRG), Las Vegas, for projection mapping on a 3D cube.</p>
-        <br />
-        <p>Play and check out the source code on OpenProcessing</p>
-        <p>
-          Test it out unshuffled:{" "}
-          <a
-            className={styles.featureLink}
-            href="https://www.openprocessing.org/sketch/470700"
-            target="_blank"
-            rel="noreferrer"
-          >
-            https://www.openprocessing.org/sketch/470700
-          </a>
-        </p>
-        <p>
-          Start shuffled:{" "}
-          <a
-            className={styles.featureLink}
-            href="https://www.openprocessing.org/sketch/470724"
-            target="_blank"
-            rel="noreferrer"
-          >
-            https://www.openprocessing.org/sketch/470724
-          </a>
-        </p>
+    <>
+      <div className={styles.featureFlexRow}>
+        <div className={styles.featureFlex3}>
+          <p>A 2D interactive Rubik&apos;s Cube map built with Processing.</p>
+          <p>Created at Production Resource Group (PRG), Las Vegas, for projection mapping on a 3D cube.</p>
+          <br />
+          <p>Play and check out the source code on OpenProcessing.</p>
+          <p>
+            Start solved:{" "}
+            <a
+              className={styles.featureLink}
+              href="https://www.openprocessing.org/sketch/470700"
+              target="_blank"
+              rel="noreferrer"
+            >
+              openprocessing.org/sketch/470700
+            </a>
+          </p>
+          <p>
+            Start shuffled:{" "}
+            <a className={styles.featureLink} href="openprocessing.org/sketch/470724" target="_blank" rel="noreferrer">
+              openprocessing.org/sketch/470724
+            </a>
+          </p>
+        </div>
+        <span className={cx(styles.featureFlex2, styles.featureImage)}>
+          <Image className={styles.borderRadius} src={cubeImage} alt="Net of the Rubik's cube" placeholder="blur" />
+        </span>
       </div>
-      <a
-        href="https://www.openprocessing.org/sketch/470724"
-        target="_blank"
-        rel="noreferrer"
-        className={cx(styles.featureFlex2, styles.featureImage)}
-      >
-        <Image src={cubeImage} alt="Net of the Rubik's cube" placeholder="blur" />
-      </a>
-    </div>
+      <div className={styles.videoContainer}>
+        <span>Projection test</span>
+        <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
+          <source src="/images/features/rubiks-cube-projection.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </>
   );
 };
 
