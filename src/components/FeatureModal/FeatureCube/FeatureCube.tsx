@@ -26,7 +26,12 @@ const FeatureCube = () => {
           </p>
           <p>
             Start shuffled:{" "}
-            <a className={styles.featureLink} href="openprocessing.org/sketch/470724" target="_blank" rel="noreferrer">
+            <a
+              className={styles.featureLink}
+              href="https://www.openprocessing.org/sketch/470724"
+              target="_blank"
+              rel="noreferrer"
+            >
               openprocessing.org/sketch/470724
             </a>
           </p>
