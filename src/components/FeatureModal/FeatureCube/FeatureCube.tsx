@@ -12,7 +12,7 @@ const FeatureCube = () => {
           <p>A 2D interactive Rubik&apos;s Cube map built with Processing.</p>
           <p>Created at Production Resource Group (PRG), Las Vegas, for projection mapping on a 3D cube.</p>
           <br />
-          <p>Play and check out the source code on OpenProcessing.</p>
+          <p>Test it out and view the source code on OpenProcessing.</p>
           <p>
             Start solved:{" "}
             <a
@@ -42,7 +42,14 @@ const FeatureCube = () => {
       </div>
       <div className={styles.videoContainer}>
         <span>Projection test</span>
-        <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
+        <video
+          className={styles.fullWidthVideo}
+          preload="metadata"
+          playsInline
+          controls
+          muted
+          poster="/images/features/rubiks-cube-projection-poster.jpg"
+        >
           <source src="/images/features/rubiks-cube-projection.mp4" type="video/mp4" />
         </video>
       </div>

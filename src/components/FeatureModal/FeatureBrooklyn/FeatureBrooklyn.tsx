@@ -10,7 +10,7 @@ const FeatureBrooklyn = () => {
       <br />
       <p>
         Collaborating with friends in audio engineering and videography, we filmed and livestreamed Australian &
-        international artists. For the project I built the AV/livestream studio, camera-operated & did live
+        international artists. For the project I built the AV/livestream studio, camera-operated & performed live
         vision-switching.
       </p>
       <br />

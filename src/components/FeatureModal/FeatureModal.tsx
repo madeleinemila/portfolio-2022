@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useState } from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
 import FocusLock from "react-focus-lock";
 import FeatureAnsarada from "./FeatureAnsarada/FeatureAnsarada";
 import FeatureBrooklyn from "./FeatureBrooklyn/FeatureBrooklyn";
@@ -37,6 +37,7 @@ const featureContentMap: Record<FeatureKey, FeatureContent> = {
 
 const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
   const [revealContent, setRevealContent] = useState<boolean>(false);
+  const scrollYRef = useRef<number>(0);
 
   const escapeToClose = useCallback(
     (event: KeyboardEvent) => {
@@ -53,16 +54,32 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
 
     // Prevent body scroll when modal is open
     document.body.style.overflow = "hidden";
-
-    // Prevent jump in content
+    /* Prevent jump in content */
     if (scrollbarWidth) {
       document.body.style.paddingRight = `${scrollbarWidth}px`;
     }
+    /* For iOS */
+    if (window.scrollY) {
+      // Store scroll Y pos if it is not 0 (i.e. before scroll pos has reset to top)
+      scrollYRef.current = window.scrollY;
+    }
+    document.body.style.position = "fixed";
+    document.body.style.top = `-${scrollYRef.current}px`;
+    document.body.style.bottom = "0px";
+    document.body.style.left = "0px";
+    document.body.style.right = "0px";
 
     window.addEventListener("keydown", escapeToClose);
     return () => {
       document.body.style.overflow = "overlay";
       document.body.style.paddingRight = "0";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.bottom = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      window.scrollTo(0, scrollYRef.current);
+
       window.removeEventListener("keydown", escapeToClose);
     };
   }, [escapeToClose]);

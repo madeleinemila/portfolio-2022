@@ -17,13 +17,13 @@ const FeatureLighting = () => {
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
           <span>Fixture control with music</span>
           <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
-            <source src="/images/features/fixture-control-music.mp4" type="video/mp4" />
+            <source src="/images/features/fixture-control-music.mp4#t=0.1" type="video/mp4" />
           </video>
         </div>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
           <span>Fixture control with motion</span>
           <video className={styles.fullWidthVideo} preload="metadata" playsInline controls muted>
-            <source src="/images/features/fixture-control-motion.mp4" type="video/mp4" />
+            <source src="/images/features/fixture-control-motion.mp4#t=0.1" type="video/mp4" />
           </video>
         </div>
       </div>

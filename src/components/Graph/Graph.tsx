@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useRef } from "react";
 import dynamic from "next/dynamic";
-import p5 from "p5"; /* Imported for types only */
+import type p5 from "p5";
 import {
   GRAPH_BREAKPOINT,
   DELTAS,

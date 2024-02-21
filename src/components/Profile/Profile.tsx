@@ -28,7 +28,7 @@ const Profile = ({ onJumpToWork }: ProfileProps): JSX.Element => {
               <li>
                 I&apos;ve worked with:
                 <ul className={styles.listStyleDisc}>
-                  <li>Go, C, C#, Haskell, Ruby, Processing, Arduino</li>
+                  <li>Go, C, C++, C#, Haskell, Ruby, Processing, Arduino</li>
                 </ul>
               </li>
               <br />
@@ -58,7 +58,7 @@ const Profile = ({ onJumpToWork }: ProfileProps): JSX.Element => {
         <div className={styles.cell}>
           <Subsection heading="Education">
             <p>Bachelor of Arts, University of Sydney</p>
-            <p>Grad. Dip. Interaction Design & Electronic Arts, University of Sydney, High Distinction Average</p>
+            <p>Grad. Dip. Interaction Design & Electronic Arts, University of Sydney, High Distinction</p>
 
             <p>General Assembly Software Engineering Immersive</p>
           </Subsection>

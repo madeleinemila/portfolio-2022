@@ -75,12 +75,12 @@ const FeatureSC = () => {
         muted
         controls
       >
-        <source src="/images/features/sc-cafe-example.mp4" type="video/mp4" />
+        <source src="/images/features/sc-cafe-example.mp4#t=0.1" type="video/mp4" />
       </video>
       <br />
       <p>Interactive onboarding excerpt:</p>
       <video className={styles.fullWidthVideo} preload="metadata" playsInline muted controls>
-        <source src="/images/features/sc-tutorial.mp4" type="video/mp4" />
+        <source src="/images/features/sc-tutorial.mp4#t=0.1" type="video/mp4" />
       </video>
       <br />
 
