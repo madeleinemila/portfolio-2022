@@ -6,7 +6,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: 100%;
-  height: 100lvh;
+  height: 100svh;
 
   background: $background-accent-dark; // fallback
   background: linear-gradient(to bottom, $background-accent-light 0%, $background-accent-dark 100%);
@@ -43,6 +43,10 @@
 
   @media (min-width: $breakpoint-small) {
     margin: 48px 0 16px;
+  }
+
+  @media (max-height: $breakpoint-small-height) {
+    margin-top: 0;
   }
 }
 

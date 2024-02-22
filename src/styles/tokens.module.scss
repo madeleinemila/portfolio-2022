@@ -52,6 +52,10 @@ $heading-letter-spacing: 5px;
   @media (min-width: $breakpoint-small) {
     font-size: $lg-font-size;
   }
+
+  @media (max-height: $breakpoint-small-height) {
+    font-size: $sm-font-size;
+  }
 }
 
 @mixin subheading-styles() {
@@ -80,6 +84,8 @@ $breakpoint-xsmall: 480px;
 $breakpoint-small: 640px;
 $breakpoint-medium: 800px;
 $breakpoint-large: 1120px;
+
+$breakpoint-small-height: 540px;
 
 /* Z-index */
 
