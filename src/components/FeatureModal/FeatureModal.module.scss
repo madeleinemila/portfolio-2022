@@ -6,8 +6,8 @@
   top: 0;
   left: 0;
   width: 100%;
+  height: 100vh; // fallback
   height: 100svh;
-  height: calc(var(--vh, 1svh) * 100);
   z-index: $zindex-modal-background;
 
   background-color: $background-tertiary-overlay;
