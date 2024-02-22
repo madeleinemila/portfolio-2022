@@ -97,6 +97,11 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
 .close {
   @include heading-styles;
 
+  // Make close button tap surface area more accessible
+  $close-button-width: 44px;
+  width: $close-button-width;
+  margin-right: $close-button-width / 2 * -1;
+
   align-self: flex-end;
   letter-spacing: 0;
   color: $content-secondary;

@@ -69,7 +69,7 @@ const FeatureSC = () => {
       </div>
       <video
         ref={demoVideoRef}
-        className={cx(styles.fullWidthVideo, styles.videoBorder)}
+        className={cx(styles.fullWidthVideo, styles.videoBorder, styles.exampleReelVideo)}
         preload="metadata"
         playsInline
         muted
@@ -79,7 +79,7 @@ const FeatureSC = () => {
       </video>
       <br />
       <p>Interactive onboarding excerpt:</p>
-      <video className={styles.fullWidthVideo} preload="metadata" playsInline muted controls>
+      <video className={cx(styles.fullWidthVideo, styles.video16_9)} preload="metadata" playsInline muted controls>
         <source src="/images/features/sc-tutorial.mp4#t=0.1" type="video/mp4" />
       </video>
       <br />
