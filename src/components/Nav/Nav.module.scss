@@ -22,11 +22,19 @@ $chevron-size: 48px;
 .chevronUp {
   font-size: $chevron-size;
   transform: translateY(12px);
+
+  @media (max-height: $breakpoint-small-height) {
+    font-size: $chevron-size * 2/3;
+  }
 }
 
 .chevronDown {
   font-size: $chevron-size;
   transform: translateY(-12px) rotate(180deg);
+
+  @media (max-height: $breakpoint-small-height) {
+    font-size: $chevron-size * 2/3;
+  }
 }
 
 .label {
@@ -40,6 +48,10 @@ $chevron-size: 48px;
   @media (min-width: $breakpoint-small) {
     font-size: 16px;
   }
+
+  @media (max-height: $breakpoint-small-height) {
+    font-size: 12px;
+  }
 }
 
 .light {
@@ -51,6 +63,10 @@ $chevron-size: 48px;
   &:focus-visible {
     outline: none;
     text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 10px;
+  }
+
+  @media (max-height: $breakpoint-xsmall-height) {
+    margin: 10px auto;
   }
 }
 

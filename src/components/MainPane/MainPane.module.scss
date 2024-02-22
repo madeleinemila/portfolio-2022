@@ -25,12 +25,7 @@
 
 .bottomNav {
   margin-top: auto;
-  margin-bottom: 64px;
   z-index: $zindex-button-over-bg;
-
-  @media (min-width: $breakpoint-small) {
-    margin-bottom: 32px;
-  }
 }
 
 .graphContainer {
