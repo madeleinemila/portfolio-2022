@@ -11,7 +11,7 @@ function Document() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
-        <div id="loader">
+        <div id="loader" aria-label="loading">
           <div id="spinnerContainer">
             <div id="spinner" />
           </div>

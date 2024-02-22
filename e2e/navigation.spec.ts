@@ -12,6 +12,7 @@ const workProfessionalTitle = "Professional";
 
 test("Main page -> About", async ({ context, page }) => {
   await page.goto("/");
+  await expect(page.getByLabel("loading")).not.toBeVisible();
 
   // Main page
   await expect(page).toHaveTitle("Madeleine Milasas - Portfolio");
@@ -66,6 +67,7 @@ test("Main page -> About", async ({ context, page }) => {
 
 test("Go to Work page", async ({ page }) => {
   await page.goto("/");
+  await expect(page.getByLabel("loading")).not.toBeVisible();
 
   // Go to Work page
   await page.getByRole("button", { name: /^Work$/ }).click();
