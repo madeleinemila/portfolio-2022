@@ -1,3 +1,5 @@
+import styles from "../shared.module.scss";
+
 const FeatureO = () => {
   return (
     <div>
@@ -16,7 +18,15 @@ const FeatureO = () => {
         drummer then played to the tempo of his own heartbeat, gradually accelerating.
       </p>
       <br />
-      <video preload="none" autoPlay playsInline loop muted>
+      <video
+        className={styles.fullWidthVideo}
+        preload="metadata"
+        poster="/images/features/origin-of-o-poster-black.jpg"
+        autoPlay
+        playsInline
+        loop
+        muted
+      >
         <source src="/images/features/origin-of-o-clip-mute.mp4" type="video/mp4" />
       </video>
     </div>

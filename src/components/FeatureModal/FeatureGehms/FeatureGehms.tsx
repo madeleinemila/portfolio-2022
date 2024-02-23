@@ -33,7 +33,7 @@ const FeatureGehms = () => {
             </a>
           </p>
           <br />
-          <p>Three in-browser retro games with real-time hardware controllers.</p>
+          <p>Three in-browser retro games with realtime hardware controllers.</p>
           <p>Built with:</p>
           <ul>
             <li>JavaScript, Phaser &amp; Ruby on Rails for the games</li>

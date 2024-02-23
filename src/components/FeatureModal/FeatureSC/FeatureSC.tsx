@@ -70,17 +70,25 @@ const FeatureSC = () => {
       <video
         ref={demoVideoRef}
         className={cx(styles.fullWidthVideo, styles.videoBorder, styles.exampleReelVideo)}
+        poster="/images/features/sc-cafe-example-poster.jpg"
         preload="metadata"
         playsInline
         muted
         controls
       >
-        <source src="/images/features/sc-cafe-example.mp4#t=0.1" type="video/mp4" />
+        <source src="/images/features/sc-cafe-example.mp4" type="video/mp4" />
       </video>
       <br />
       <p>Interactive onboarding excerpt:</p>
-      <video className={cx(styles.fullWidthVideo, styles.video16_9)} preload="metadata" playsInline muted controls>
-        <source src="/images/features/sc-tutorial.mp4#t=0.1" type="video/mp4" />
+      <video
+        className={cx(styles.fullWidthVideo, styles.video16_9)}
+        poster="/images/features/sc-tutorial-poster.jpg"
+        preload="metadata"
+        playsInline
+        muted
+        controls
+      >
+        <source src="/images/features/sc-tutorial.mp4" type="video/mp4" />
       </video>
       <br />
 
