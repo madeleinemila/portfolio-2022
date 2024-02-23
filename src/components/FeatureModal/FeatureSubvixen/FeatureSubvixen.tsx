@@ -54,13 +54,14 @@ const FeatureSubvixen = () => {
       </div>
       <div className={styles.supplement}>
         <a
+          className={styles.supplementLink}
           href="https://www.youtube.com/embed/t8pxUcoJPww?autoplay=1&rel=0&amp;showinfo=0"
           target="_blank"
           rel="noreferrer"
         >
           <span className={styles.caption}>Project presentation livestream</span>
           <div className={styles.supplementImage}>
-            <Image src={livestreamImage} alt="Presentation video" placeholder="blur" />
+            <Image src={livestreamImage} alt="Presentation video thumbnail" placeholder="blur" />
           </div>
         </a>
       </div>

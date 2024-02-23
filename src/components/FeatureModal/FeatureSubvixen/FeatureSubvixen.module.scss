@@ -7,3 +7,11 @@
 .supplementImage {
   max-width: 200px;
 }
+
+.supplementLink {
+  display: inline-block;
+
+  &:hover {
+    opacity: 90%;
+  }
+}

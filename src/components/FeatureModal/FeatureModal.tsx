@@ -90,7 +90,7 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
 
   return (
     <FocusLock returnFocus>
-      <div className={styles.background} onClick={onClose}>
+      <div aria-label="background" className={styles.background} onClick={onClose}>
         <svg className={styles.animatedSquareContainer}>
           <rect className={styles.animatedSquare} onAnimationEnd={handleAnimationEnd} />
         </svg>

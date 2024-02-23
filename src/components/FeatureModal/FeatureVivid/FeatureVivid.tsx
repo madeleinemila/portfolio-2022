@@ -3,7 +3,7 @@ import cx from "classnames";
 import dichroicMCAImage from "../../../../public/images/features/dichroic-mca.jpg";
 import dichroicMakingOfImage from "../../../../public/images/features/dichroic-vim-play.jpg";
 import pitchSortImage from "../../../../public/images/features/pitch-sort.png";
-import styles from "../shared.module.scss";
+import styles from "./FeatureVivid.module.scss";
 
 const FeatureVivid = () => {
   return (
@@ -38,7 +38,12 @@ const FeatureVivid = () => {
           <Image src={pitchSortImage} alt="Pitch reactive software screenshot" layout="responsive" placeholder="blur" />
         </div>
         <div className={styles.featureFlex1}>
-          <a href="https://player.vimeo.com/video/92922101" target="_blank" rel="noreferrer">
+          <a
+            className={styles.supplementLink}
+            href="https://player.vimeo.com/video/92922101"
+            target="_blank"
+            rel="noreferrer"
+          >
             <Image
               src={dichroicMakingOfImage}
               alt="Dichroic Dimensions Making Of"

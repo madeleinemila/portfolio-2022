@@ -8,14 +8,15 @@ type NavVariant = "light" | "dark" | "block";
 type NavProps = {
   direction: NavDirection;
   onClick: () => void;
+  ariaLabel?: string;
   label?: string;
   variant?: NavVariant;
 };
 
-const Nav = ({ direction, label, onClick, variant = "light" }: NavProps): JSX.Element => {
+const Nav = ({ direction, ariaLabel, label, onClick, variant = "light" }: NavProps): JSX.Element => {
   return (
     <button
-      aria-label={label || direction}
+      aria-label={ariaLabel || label || direction}
       className={cx(styles.container, {
         [styles.light]: variant === "light",
         [styles.dark]: variant === "dark",
