@@ -24,7 +24,7 @@ $chevron-size: 48px;
   transform: translateY(12px);
 
   @media (max-height: $breakpoint-small-height) {
-    font-size: $chevron-size * 2/3;
+    font-size: $chevron-size * 2 / 3;
   }
 }
 
@@ -33,7 +33,7 @@ $chevron-size: 48px;
   transform: translateY(-12px) rotate(180deg);
 
   @media (max-height: $breakpoint-small-height) {
-    font-size: $chevron-size * 2/3;
+    font-size: $chevron-size * 2 / 3;
   }
 }
 
@@ -62,7 +62,7 @@ $chevron-size: 48px;
   &:hover,
   &:focus-visible {
     outline: none;
-    text-shadow: rgba(255, 255, 255, 0.9) 0px 0px 10px;
+    text-shadow: rgb(255 255 255 / 90%) 0 0 10px;
   }
 
   @media (max-height: $breakpoint-xsmall-height) {

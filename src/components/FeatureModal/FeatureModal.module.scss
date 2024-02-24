@@ -45,6 +45,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   0% {
     stroke-dashoffset: $dasharray; // Start the 'dash' so offset that we're only seeing the gap (i.e. no stroke)
   }
+
   100% {
     stroke-dashoffset: 0; // Animate in the solid part of the 'dash' (i.e. draw the perimeter)
   }
@@ -60,11 +61,12 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   transform: translateX(-50%) translateY(-50%);
   z-index: $zindex-modal;
   overflow-y: auto;
+
   @include scrollbar-style($background-accent-feature);
 
   color: $content-primary;
   background-color: $background-secondary;
-  box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 30px rgb(0 0 0 / 10%);
 
   @media (min-width: $breakpoint-small) {
     max-height: 90%;
@@ -73,6 +75,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   @media (prefers-color-scheme: dark) {
     color: $content-secondary-dark-theme;
     background-color: $background-secondary-dark-theme;
+
     @include scrollbar-style($background-accent-dark-dark-theme);
   }
 }
@@ -90,6 +93,7 @@ $dasharray: 4 * $square-size; // Make a 'dash' as long as the square perimeter
   text-wrap: pretty;
 
   padding: 0;
+
   @media (min-width: $breakpoint-xsmall) {
     padding: 0 24px;
   }

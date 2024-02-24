@@ -1,0 +1,14 @@
+{
+  "extends": ["stylelint-config-standard-scss"],
+  "rules": {
+    "scss/at-import-partial-extension": "always",
+    "keyframes-name-pattern": "^[a-zA-Z]*$",
+    "selector-class-pattern": "^[a-zA-Z][a-zA-Z0-9]*$",
+    "selector-id-pattern": "^_?_?[a-zA-Z]*$",
+    "comment-empty-line-before": null,
+    "scss/dollar-variable-empty-line-before": null,
+    "font-family-name-quotes": "always-unless-keyword",
+    "declaration-empty-line-before": null,
+    "declaration-no-important": true
+  }
+}

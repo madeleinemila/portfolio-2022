@@ -1,6 +1,28 @@
 @import "../../styles/tokens.module.scss";
 @import "../../styles/utils.module.scss";
 
+.labelContainer {
+  width: 200px;
+}
+
+.label {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  font-weight: normal;
+  color: $content-primary;
+
+  /* For highlight effect */
+  display: inline;
+  background: linear-gradient(to right, #0000 50%, $background-accent-overlay 50%);
+  background-size: 202%;
+  background-position: 0 0;
+  transition: background-position 0.5s ease-in-out;
+
+  @media (prefers-color-scheme: dark) {
+    color: $content-primary-dark-theme;
+  }
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -29,26 +51,4 @@
 
 .img {
   border-radius: 8px;
-}
-
-.labelContainer {
-  width: 200px;
-}
-
-.label {
-  font-size: 18px;
-  letter-spacing: 0.6px;
-  font-weight: normal;
-  color: $content-primary;
-
-  /* For highlight effect */
-  display: inline;
-  background: linear-gradient(to right, #0000 50%, $background-accent-overlay 50%);
-  background-size: 202%;
-  background-position: 0 0;
-  transition: background-position 0.5s ease-in-out;
-
-  @media (prefers-color-scheme: dark) {
-    color: $content-primary-dark-theme;
-  }
 }

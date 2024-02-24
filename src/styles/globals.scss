@@ -3,14 +3,14 @@
 
 @font-face {
   font-family: "Crimson";
-  src: url(/fonts/CrimsonText-Regular.ttf) format("truetype");
+  src: url("/fonts/CrimsonText-Regular.ttf") format("truetype");
 }
 
 * {
   box-sizing: border-box;
 
   &:focus-visible {
-    @include focus-style();
+    @include focus-style;
   }
 }
 
