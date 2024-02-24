@@ -18,7 +18,7 @@ const AboutPane: ForwardRefRenderFunction<HTMLDivElement, AboutPaneProps> = ({ j
       <BorderedContent heading="about">
         <Intro />
         <Profile onJumpToWork={jumpToWork} />
-        <Nav direction="down" onClick={jumpToMain} variant="dark" />
+        <Nav ariaLabel="Back to start" direction="down" onClick={jumpToMain} variant="dark" />
       </BorderedContent>
     </div>
   );
