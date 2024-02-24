@@ -1,6 +1,9 @@
 @import "../shared.module.scss";
 
 .suppImages {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   margin: 0 auto;
   max-width: 600px;
 }

@@ -30,12 +30,22 @@ const FeatureVivid = () => {
           </ul>
         </div>
         <div className={cx(styles.featureFlex2, styles.featureImage)}>
-          <Image src={dichroicMCAImage} alt="Dichroic Dimensions" placeholder="blur" />
+          <Image
+            src={dichroicMCAImage}
+            alt="Dichroic Dimensions"
+            style={{ width: "100%", height: "auto" }}
+            placeholder="blur"
+          />
         </div>
       </div>
       <div className={styles.featureFlexRow}>
         <div className={cx(styles.featureFlex1, styles.featureImage)}>
-          <Image src={pitchSortImage} alt="Pitch reactive software screenshot" layout="responsive" placeholder="blur" />
+          <Image
+            src={pitchSortImage}
+            alt="Pitch reactive software screenshot"
+            style={{ width: "100%", height: "auto" }}
+            placeholder="blur"
+          />
         </div>
         <div className={styles.featureFlex1}>
           <a
@@ -47,7 +57,7 @@ const FeatureVivid = () => {
             <Image
               src={dichroicMakingOfImage}
               alt="Dichroic Dimensions Making Of"
-              layout="responsive"
+              style={{ width: "100%", height: "auto" }}
               placeholder="blur"
             />
             <span className={styles.caption}>&lsquo;Dichroic Dimensions&rsquo; making-of video</span>

@@ -20,7 +20,6 @@ export const Thumbnail = ({ imageData, label, isActiveFeature, onClick }: Thumbn
         placeholder="blur"
         width="100"
         height="100"
-        layout="fixed"
         className={styles.img}
       />
       <div className={styles.labelContainer}>

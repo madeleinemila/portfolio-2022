@@ -1,5 +1,11 @@
 @import "../shared.module.scss";
 
+.container {
+  max-width: 800px; // To avoid upscaling gif
+  width: 100%;
+  margin: 0 auto;
+}
+
 .supplement {
   margin-top: 48px;
 }

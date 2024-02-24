@@ -11,17 +11,15 @@ type BusinessCardProps = {
 const BusinessCard = ({ onJumpToWork }: BusinessCardProps): JSX.Element => {
   return (
     <div className={styles.container}>
-      <div className={styles.imageContainer}>
-        <Image
-          src={profilePic}
-          alt="Profile picture"
-          placeholder="blur"
-          width="160"
-          height="160"
-          layout="fixed"
-          priority
-        />
-      </div>
+      <Image
+        className={styles.imageContainer}
+        src={profilePic}
+        alt="Profile picture"
+        placeholder="blur"
+        width="160"
+        height="160"
+        priority
+      />
       <Subsection heading="Connect">
         <ul>
           <li>

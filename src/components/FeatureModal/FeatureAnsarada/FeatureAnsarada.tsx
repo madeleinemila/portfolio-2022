@@ -26,16 +26,26 @@ const FeatureAnsarada = () => {
         <Image
           src={overviewImage}
           alt="Screenshot of Ansarada Pathways overview"
+          style={{ width: "100%", height: "auto" }}
           placeholder="blur"
-          layout="responsive"
         />
-        <Image src={activityImage} alt="Screenshot of Ansarada activity" placeholder="blur" layout="responsive" />
-        <Image src={topicImage} alt="Screenshot of an Ansarada Pathways topic" placeholder="blur" layout="responsive" />
+        <Image
+          src={activityImage}
+          alt="Screenshot of Ansarada activity"
+          style={{ width: "100%", height: "auto" }}
+          placeholder="blur"
+        />
+        <Image
+          src={topicImage}
+          alt="Screenshot of an Ansarada Pathways topic"
+          style={{ width: "100%", height: "auto" }}
+          placeholder="blur"
+        />
         <Image
           src={commentsImage}
           alt="Screenshot of Ansarada scorecards and comment"
           placeholder="blur"
-          layout="responsive"
+          style={{ width: "100%", height: "auto" }}
         />
       </div>
     </div>

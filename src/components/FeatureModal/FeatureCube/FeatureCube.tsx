@@ -36,9 +36,13 @@ const FeatureCube = () => {
             </a>
           </p>
         </div>
-        <span className={cx(styles.featureFlex2, styles.featureImage)}>
-          <Image className={styles.borderRadius} src={cubeImage} alt="Net of the Rubik's cube" placeholder="blur" />
-        </span>
+        <Image
+          className={cx(styles.featureFlex2, styles.featureImage, styles.borderRadius)}
+          src={cubeImage}
+          alt="Net of the Rubik's cube"
+          style={{ width: "100%", height: "auto" }}
+          placeholder="blur"
+        />
       </div>
       <div className={styles.videoContainer}>
         <span>Projection test</span>
