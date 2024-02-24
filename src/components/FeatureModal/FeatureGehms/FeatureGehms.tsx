@@ -41,6 +41,7 @@ const FeatureGehms = () => {
           </ul>
           <br />
           <p>Created for General Assembly&apos;s Software Engineering Immersive, week 9 group assignment.</p>
+          <br />
           <p>
             My role: creating the hardware controllers and the software to drive their low latency interaction with the
             browser and Phaser games.
