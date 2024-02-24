@@ -18,7 +18,6 @@ const BusinessCard = ({ onJumpToWork }: BusinessCardProps): JSX.Element => {
         placeholder="blur"
         width="160"
         height="160"
-        priority
       />
       <Subsection heading="Connect">
         <ul>

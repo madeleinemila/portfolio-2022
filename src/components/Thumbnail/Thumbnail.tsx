@@ -16,7 +16,6 @@ export const Thumbnail = ({ imageData, label, isActiveFeature, onClick }: Thumbn
       <Image
         src={imageData}
         alt={`Thumbnail for ${label}`}
-        priority
         placeholder="blur"
         width="100"
         height="100"
