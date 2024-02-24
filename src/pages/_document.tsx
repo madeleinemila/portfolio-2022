@@ -7,7 +7,10 @@ function Document() {
     <Html>
       <Head>
         <style>{loadingStyles}</style>
-        <meta name="description" content="Madeleine Milasas - Portfolio" />
+        <meta
+          name="description"
+          content="Software engineer & maker from Sydney, based in Berlin. Background in music, film, television and live events."
+        />
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <body>
