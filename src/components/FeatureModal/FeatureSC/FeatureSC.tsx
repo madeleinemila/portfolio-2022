@@ -10,9 +10,13 @@ const FeatureSC = () => {
       demoVideoRef.current.currentTime = timeSecs;
       demoVideoRef.current.scrollIntoView({ block: "center", behavior: "smooth" });
       if (window.innerWidth < 480) {
-        demoVideoRef.current.requestFullscreen();
+        demoVideoRef.current.requestFullscreen().catch(() => {
+          /* OK if it doesn't go fullscreen */
+        });
       }
-      demoVideoRef.current.play();
+      demoVideoRef.current.play().catch(() => {
+        /* OK if it doesn't auto-play */
+      });
     }
   }, []);
 

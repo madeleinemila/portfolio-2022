@@ -90,7 +90,8 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
 
   return (
     <FocusLock returnFocus>
-      <div aria-label="background" className={styles.background} onClick={onClose}>
+      {/* a11y note: The event listener on this component provides equivalent keyboard interaction to this click handling */}
+      <div aria-hidden data-testid="background" className={styles.background} onClick={onClose}>
         <svg className={styles.animatedSquareContainer}>
           <rect className={styles.animatedSquare} onAnimationEnd={handleAnimationEnd} />
         </svg>

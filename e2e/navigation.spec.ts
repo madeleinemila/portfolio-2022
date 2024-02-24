@@ -111,7 +111,7 @@ test("Work -> Professional modals", async ({ context, page, viewport }) => {
   await expect(ansaradaPage).toHaveTitle(/Ansarada/);
   if (viewport && viewport.width >= 580) {
     // Exercise closing modal via bg click
-    await page.getByLabel("background").click({
+    await page.getByTestId("background").click({
       button: "left",
       position: { x: 10, y: 10 },
     });
