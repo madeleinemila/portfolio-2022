@@ -20,7 +20,7 @@ const vividModalTitle = "Vivid Sydney - Dichroic Dimensions";
 
 test("Main page -> About", async ({ context, page }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
 
   // Main page
   await expect(page).toHaveTitle("Madeleine Milasas - Portfolio");
@@ -75,7 +75,7 @@ test("Main page -> About", async ({ context, page }) => {
 
 test("Main -> Work page -> Main page", async ({ page }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
 
   await clickWorkButton(page);
   await expect(page.getByText(aboutTitle)).not.toBeInViewport();
@@ -92,7 +92,7 @@ test("Main -> Work page -> Main page", async ({ page }) => {
 
 test("Work -> Professional modals", async ({ context, page, viewport }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
   await clickWorkButton(page);
   await expect(page.getByText(workProfessionalTitle)).toBeVisible();
 
@@ -123,7 +123,7 @@ test("Work -> Professional modals", async ({ context, page, viewport }) => {
 
 test("Work -> Project modals -> Brooklyn -> Subvixen", async ({ context, page, isMobile }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
   await clickWorkButton(page);
   await expect(page.getByText(workProjectsTitle)).toBeVisible();
 
@@ -156,7 +156,7 @@ test("Work -> Project modals -> Brooklyn -> Subvixen", async ({ context, page, i
 
 test("Work -> Project modals -> Gehms -> Lighting", async ({ context, page }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
   await clickWorkButton(page);
   await expect(page.getByText(workProjectsTitle)).toBeVisible();
 
@@ -180,7 +180,7 @@ test("Work -> Project modals -> Gehms -> Lighting", async ({ context, page }) =>
 
 test("Work -> Project modals -> Rubiks", async ({ context, hasTouch, page, viewport }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
   const viewportHeight = viewport?.height ?? 0;
   if (hasTouch) {
     await clickWorkButton(page);
@@ -207,7 +207,7 @@ test("Work -> Project modals -> Rubiks", async ({ context, hasTouch, page, viewp
 
 test("Work -> Project modals -> O -> Vivid", async ({ context, page }) => {
   await page.goto("/");
-  await expect(page.getByLabel("loading")).not.toBeVisible();
+  await expect(page.getByLabel("Loading")).not.toBeVisible();
   await clickWorkButton(page);
   await expect(page.getByText(workProjectsTitle)).toBeVisible();
 

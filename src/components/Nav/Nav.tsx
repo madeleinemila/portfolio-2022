@@ -16,7 +16,7 @@ type NavProps = {
 const Nav = ({ direction, ariaLabel, label, onClick, variant = "light" }: NavProps): JSX.Element => {
   return (
     <button
-      aria-label={ariaLabel || label || direction}
+      aria-label={ariaLabel}
       className={cx(styles.container, {
         [styles.light]: variant === "light",
         [styles.dark]: variant === "dark",
@@ -24,11 +24,19 @@ const Nav = ({ direction, ariaLabel, label, onClick, variant = "light" }: NavPro
       })}
       onClick={onClick}
     >
-      {direction === "up" && <h4 className={styles.chevronUp}>&circ;</h4>}
+      {direction === "up" && (
+        <h4 aria-hidden className={styles.chevronUp}>
+          &circ;
+        </h4>
+      )}
 
       {label && <h4 className={styles.label}>{label}</h4>}
 
-      {direction === "down" && <h4 className={styles.chevronDown}>&circ;</h4>}
+      {direction === "down" && (
+        <h4 aria-hidden className={styles.chevronDown}>
+          &circ;
+        </h4>
+      )}
     </button>
   );
 };

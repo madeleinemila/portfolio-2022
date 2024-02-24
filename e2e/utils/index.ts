@@ -1,7 +1,7 @@
 import { BrowserContext, Page } from "@playwright/test";
 
 export const clickCloseModalButton = async (page: Page) => {
-  await page.getByRole("button", { name: "close modal" }).click();
+  await page.getByRole("button", { name: "Close modal" }).click();
 };
 
 export const clickNewTabLink = async (context: BrowserContext, page: Page, linkText: string) => {

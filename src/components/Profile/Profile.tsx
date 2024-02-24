@@ -24,14 +24,12 @@ const Profile = ({ onJumpToWork }: ProfileProps): JSX.Element => {
                   <li>TypeScript, React, Redux, Node, JavaScript, HTML, CSS</li>
                 </ul>
               </li>
-              <br />
               <li>
                 I&apos;ve worked with:
                 <ul className={styles.listStyleDisc}>
                   <li>Go, C, C++, C#, Haskell, Ruby, Processing, Arduino</li>
                 </ul>
               </li>
-              <br />
               <li>
                 You can also find me on:
                 <ul className={styles.listStyleDisc}>

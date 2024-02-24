@@ -97,7 +97,7 @@ const WorkPane: ForwardRefRenderFunction<HTMLDivElement, WorkPaneProps> = ({ jum
         </div>
       </BorderedContent>
 
-      <Nav direction="up" onClick={jumpToMain} variant="block" ariaLabel="back to landing page" />
+      <Nav direction="up" onClick={jumpToMain} variant="block" ariaLabel="Back to landing page" />
     </div>
   );
 };

@@ -99,7 +99,7 @@ const FeatureModal = ({ feature, onClose }: FeatureModalProps): JSX.Element => {
       {revealContent && (
         <div className={styles.modal}>
           <div className={styles.modalContentContainer}>
-            <button className={styles.close} aria-label="close modal" onClick={onClose}>
+            <button className={styles.close} aria-label="Close modal" onClick={onClose}>
               ×
             </button>
             <h2 className={styles.heading}>{featureContentMap[feature].heading}</h2>

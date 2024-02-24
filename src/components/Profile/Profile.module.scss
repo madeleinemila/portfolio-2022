@@ -14,7 +14,7 @@
 .row {
   display: flex;
   flex-wrap: wrap;
-  gap: 32px;
+  gap: 40px;
 }
 
 .cell {
@@ -26,6 +26,10 @@
 .listStyleNone {
   list-style: none;
   padding: 0;
+
+  & > li:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 .listStyleDisc {
