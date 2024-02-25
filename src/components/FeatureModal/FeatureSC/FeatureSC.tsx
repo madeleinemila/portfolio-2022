@@ -81,6 +81,8 @@ const FeatureSC = () => {
         controls
       >
         <source src="/images/features/sc-cafe-example.mp4" type="video/mp4" />
+        <source src="/images/features/sc-cafe-example.webm" type="video/webm" />
+        <p>Your browser cannot play the provided video file.</p>
       </video>
       <br />
       <p>Interactive onboarding excerpt:</p>
@@ -93,6 +95,8 @@ const FeatureSC = () => {
         controls
       >
         <source src="/images/features/sc-tutorial.mp4" type="video/mp4" />
+        <source src="/images/features/sc-tutorial.webm" type="video/webm" />
+        <p>Your browser cannot play the provided video file.</p>
       </video>
       <br />
 

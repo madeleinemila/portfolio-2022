@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "prepush": "npm run lint && npm run lint:style && npm run type && npm run test:e2e",
     "start": "next start",
     "lint": "next lint",
+    "lint:style": "stylelint \"**/*.scss\"",
+    "test:e2e": "playwright test",
     "type": "tsc --noEmit"
   },
   "dependencies": {

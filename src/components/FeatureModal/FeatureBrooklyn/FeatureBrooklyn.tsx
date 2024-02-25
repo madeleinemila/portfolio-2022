@@ -26,7 +26,7 @@ const FeatureBrooklyn = () => {
         <iframe
           width="100%"
           height="100%"
-          src="https://www.youtube-nocookie.com/embed/OEC71jqUk48?showinfo=0&controls=0&autohide=1"
+          src="https://www.youtube-nocookie.com/embed/OEC71jqUk48?showinfo=0&controls=1&autohide=1&rel=0"
           title="Brooklyn at Hibernian video"
           frameBorder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

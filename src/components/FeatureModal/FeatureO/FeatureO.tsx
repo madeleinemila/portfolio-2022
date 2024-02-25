@@ -28,6 +28,8 @@ const FeatureO = () => {
         muted
       >
         <source src="/images/features/origin-of-o-clip-mute.mp4" type="video/mp4" />
+        <source src="/images/features/origin-of-o-clip-mute.webm" type="video/webm" />
+        <p>Your browser cannot play the provided video file.</p>
       </video>
     </div>
   );
