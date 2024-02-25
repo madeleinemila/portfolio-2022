@@ -55,6 +55,8 @@ const FeatureCube = () => {
           poster="/images/features/rubiks-cube-projection-poster.jpg"
         >
           <source src="/images/features/rubiks-cube-projection.mp4" type="video/mp4" />
+          <source src="/images/features/rubiks-cube-projection.webm" type="video/webm" />
+          <p>Your browser cannot play the provided video file.</p>
         </video>
       </div>
     </>
