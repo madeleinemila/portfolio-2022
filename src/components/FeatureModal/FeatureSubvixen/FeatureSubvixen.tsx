@@ -20,11 +20,13 @@ const FeatureSubvixen = () => {
         />
         <br />
         <p>
-          Deployed on Heroku:
+          Deployed on Render:
           <br />
-          <a className={styles.featureLink} href="https://subvixen.herokuapp.com/" target="_blank" rel="noreferrer">
-            subvixen.herokuapp.com
+          <a className={styles.featureLink} href="https://subvixen.onrender.com/" target="_blank" rel="noreferrer">
+            subvixen.onrender.com
           </a>
+          <br />
+          It may take a few minutes to load as the Render servers start up.
         </p>
         <br />
         <p>

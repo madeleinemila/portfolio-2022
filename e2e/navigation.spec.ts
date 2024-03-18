@@ -131,7 +131,7 @@ test("Work -> Project modals -> Brooklyn -> Subvixen", async ({ context, page, i
   await expect(page.getByText(brooklynModalTitle)).toBeVisible();
   const brooklynPage = await clickNewTabLink(context, page, "brooklynathibernian.com");
   await expect(brooklynPage).toHaveURL("https://brooklynathibernian.com");
-  await expect(brooklynPage).toHaveTitle("Brooklyn at Hibernian : Music × Video : Sydney");
+  await expect(brooklynPage).toHaveTitle("Brooklyn at Hibernian : Music x Video : Sydney");
   if (!isMobile) {
     await page.keyboard.press("Escape"); // Exercising pressing ESC to close modal
   } else {
@@ -141,9 +141,9 @@ test("Work -> Project modals -> Brooklyn -> Subvixen", async ({ context, page, i
 
   await page.getByText(`"Subvixen" LED pixel mapper`).click();
   await expect(page.getByText(subvixenModalTitle)).toBeVisible();
-  const subvixenHerokuPage = await clickNewTabLink(context, page, "subvixen.herokuapp.com");
-  await expect(subvixenHerokuPage).toHaveURL("https://subvixen.herokuapp.com/");
-  await expect(subvixenHerokuPage).toHaveTitle("Subvixen");
+  const subvixenRenderPage = await clickNewTabLink(context, page, "subvixen.onrender.com");
+  await expect(subvixenRenderPage).toHaveURL("https://subvixen.onrender.com/");
+  await expect(subvixenRenderPage).toHaveTitle("Subvixen");
   const subvixenGithubPage = await clickNewTabLink(context, page, "github.com/madeleinemila/subvixen");
   await expect(subvixenGithubPage).toHaveURL("https://github.com/madeleinemila/subvixen");
   await expect(subvixenGithubPage).toHaveTitle(/madeleinemila\/subvixen/);
