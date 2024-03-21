@@ -12,12 +12,21 @@ const FeatureGehms = () => {
     <div className={styles.featureFlexColumn}>
       <div className={cx(styles.featureFlexRow, styles.wrapReverse)}>
         <div className={styles.featureFlex1}>
+          <p>Three in-browser retro games with realtime hardware controllers.</p>
+          <p>Built with:</p>
+          <ul>
+            <li>JavaScript, Phaser &amp; Ruby on Rails for the games</li>
+            <li>Arduino and Node.js for the controllers</li>
+          </ul>
+          <br />
           <p>
-            Deployed on Heroku:
+            Deployed on Render:
             <br />
-            <a className={styles.featureLink} href="https://gehms.herokuapp.com/" target="_blank" rel="noreferrer">
-              gehms.herokuapp.com
+            <a className={styles.featureLink} href="https://gehms.onrender.com/" target="_blank" rel="noreferrer">
+              gehms.onrender.com
             </a>
+            <br />
+            It may take a few minutes to load as the Render server starts up.
           </p>
           <br />
           <p>
@@ -32,13 +41,6 @@ const FeatureGehms = () => {
               github.com/madeleinemila/retro-gaming
             </a>
           </p>
-          <br />
-          <p>Three in-browser retro games with realtime hardware controllers.</p>
-          <p>Built with:</p>
-          <ul>
-            <li>JavaScript, Phaser &amp; Ruby on Rails for the games</li>
-            <li>Arduino and Node.js for the controllers</li>
-          </ul>
           <br />
           <p>Created for General Assembly&apos;s Software Engineering Immersive, week 9 group assignment.</p>
           <br />

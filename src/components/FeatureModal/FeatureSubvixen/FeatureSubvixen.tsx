@@ -26,7 +26,7 @@ const FeatureSubvixen = () => {
             subvixen.onrender.com
           </a>
           <br />
-          It may take a few minutes to load as the Render servers start up.
+          It may take a few minutes to load as the Render server starts up.
         </p>
         <br />
         <p>

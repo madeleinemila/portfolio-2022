@@ -162,9 +162,9 @@ test("Work -> Project modals -> Gehms -> Lighting", async ({ context, page }) =>
 
   await page.getByText(`"Gehms" retro games`).click();
   await expect(page.getByText(gehmsModalTitle)).toBeVisible();
-  const gehmsHerokuPage = await clickNewTabLink(context, page, "gehms.herokuapp.com");
-  await expect(gehmsHerokuPage).toHaveURL("https://gehms.herokuapp.com/");
-  await expect(gehmsHerokuPage).toHaveTitle("Gehms");
+  const gehmsRenderPage = await clickNewTabLink(context, page, "gehms.onrender.com");
+  await expect(gehmsRenderPage).toHaveURL("https://gehms.onrender.com/");
+  await expect(gehmsRenderPage).toHaveTitle("Gehms");
   const gehmsGithubPage = await clickNewTabLink(context, page, "github.com/madeleinemila/retro-gaming");
   await expect(gehmsGithubPage).toHaveURL("https://github.com/madeleinemila/retro-gaming");
   await expect(gehmsGithubPage).toHaveTitle(/madeleinemila\/retro-gaming/);
