@@ -4,7 +4,9 @@ import controllerCUImage from "../../../../public/images/features/controllers-cu
 import controllerWipImage from "../../../../public/images/features/controllers-wip.jpg";
 import gehmsGif from "../../../../public/images/features/controller-video-quick.gif";
 import gehmsHomeImage from "../../../../public/images/features/gehms-home.jpg";
-import gehmsRoidsImage from "../../../../public/images/features/gehms-roids.png";
+import gehmsPingImage from "../../../../public/images/features/gehms-ping.jpg";
+import gehmsRoidsImage from "../../../../public/images/features/gehms-roids.jpg";
+import gehmsSnaakImage from "../../../../public/images/features/gehms-snaak.jpg";
 import styles from "./FeatureGehms.module.scss";
 
 const FeatureGehms = () => {
@@ -82,6 +84,20 @@ const FeatureGehms = () => {
           className={styles.featureImage}
           src={gehmsHomeImage}
           alt="Screenshot of homepage"
+          style={{ width: "100%", height: "auto" }}
+          placeholder="blur"
+        />
+        <Image
+          className={styles.featureImage}
+          src={gehmsSnaakImage}
+          alt="Screenshot of Snaak game"
+          style={{ width: "100%", height: "auto" }}
+          placeholder="blur"
+        />
+        <Image
+          className={styles.featureImage}
+          src={gehmsPingImage}
+          alt="Screenshot of Ping game"
           style={{ width: "100%", height: "auto" }}
           placeholder="blur"
         />
